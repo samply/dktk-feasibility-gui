@@ -1,0 +1,48 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { SingleTestComponent } from './single-test.component';
+import {MaterialModule} from "../../../../layout/material/material.module";
+import {FormsModule} from "@angular/forms";
+import {TranslateModule} from "@ngx-translate/core";
+import {ButtonComponent} from "../../../../shared/components/button/button.component";
+import {FontAwesomeTestingModule} from "@fortawesome/angular-fontawesome/testing";
+import { HttpClientTestingModule } from '@angular/common/http/testing'
+import {FeatureService} from "../../../../service/feature.service";
+
+describe('SingleTestComponent', () => {
+  let component: SingleTestComponent;
+  let fixture: ComponentFixture<SingleTestComponent>;
+  const featureService = {
+    getPollingTime(): number {
+      return 10
+    },
+    getPollingIntervall(): number {
+      return 1
+    },
+  } as FeatureService
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ SingleTestComponent, ButtonComponent ],
+      imports: [MaterialModule, TranslateModule.forRoot(), FontAwesomeTestingModule, FormsModule, HttpClientTestingModule],
+      providers: [
+        {
+          provide: FeatureService,
+          useValue: featureService,
+        },
+      ],
+    })
+    .compileComponents();
+  });
+
+  // TODO
+  
+  beforeEach(() => {
+    fixture = TestBed.createComponent(SingleTestComponent);
+    component = fixture.componentInstance;
+  //  fixture.detectChanges();
+  });
+
+  it('should create', () => {
+     expect(component).toBeTruthy();
+  });
+});

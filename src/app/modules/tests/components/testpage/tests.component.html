@@ -1,0 +1,26 @@
+<mat-form-field appearance="fill">
+  <mat-label>FHIR Resource</mat-label>
+  <mat-select [formControl]="resourceControl" multiple (selectionChange)="selectionChanged()">
+    <mat-option *ngFor="let resource of resourceList" [value]="resource">{{ resource }}</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<div>
+  {{ ergebnis[0] }}<span> bestanden</span> {{ ergebnis[1] }}<span> nicht bestanden</span>
+  {{ ergebnis[2] }}<span> nicht gefunden</span>
+</div>
+
+<div *ngFor="let type of separatedTestdaten" class="fhir-resource">
+  <div *ngIf="resourceControl.value.indexOf(type.type) !== -1">
+    <span class="fhir-ueberschrift">{{ type.type }}</span>
+    <div *ngFor="let item of type.element">
+      <num-single-test
+        [item]="item"
+        [resultList]="resultList"
+        [type]="type.type"
+        (found)="count($event)"
+      >
+      </num-single-test>
+    </div>
+  </div>
+</div>

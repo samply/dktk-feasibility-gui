@@ -1,0 +1,46 @@
+<!--<div *ngIf="type === 'MedicationStatement'" class="SingleTest">-->
+<div class="SingleTest">
+  <div
+    *ngIf="istvorhanden[0]; else nichtvorhanden"
+    [ngClass]="{ vorhanden1: ergebnis, vorhanden0: !ergebnis }"
+  >
+    <div class="element-name">
+      {{ istvorhanden[1] }}{{ '  -  ' }}{{ this.getElement()[0].display }}
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-between">
+      <div fxLayout="row" fxLayoutAlign="start">
+        <textarea id="query-textfield" name="query-textfield" rows="8" cols="60">{{
+          translatedQuery | json
+        }}</textarea>
+
+        <div class="maingroup">
+          <div>localhost:5000/query-sync</div>
+          <textarea id="postman-query-sync" name="query-textfield" rows="2" cols="17">{{
+            postmanSync | json
+          }}</textarea>
+        </div>
+      </div>
+      <div class="ergebnis-box" fxLayout="column" fxLayoutAlign="center">
+        <num-button [type]="'primary'" (click)="doSend()" class="button-send">
+          {{ 'BUTTON.SEND' | translate }}
+        </num-button>
+        <div fxLayout="row" fxLayoutAlign="start">
+          <div class="ergebnis-text">Ergebnis: {{ result?.totalNumberOfPatients }}</div>
+          <fa-icon
+            *ngIf="showSpinningIcon"
+            size="2x"
+            icon="spinner"
+            class="fa-pulse result-spinning-icon"
+          ></fa-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<ng-template #nichtvorhanden>
+  <div class="nichtvorhanden">
+    <div class="element-name">
+      {{ istvorhanden[1] }}{{ ' & ' }}{{ istvorhanden[2] }}{{ ' nicht vorhanden' }}
+    </div>
+  </div>
+</ng-template>

@@ -74,6 +74,8 @@ export class EditCriterionComponent implements OnInit, AfterViewChecked {
     this.moveBetweenGroups()
 
     this.save.emit({ groupId: this.selectedGroupId })
+    console.log(this.criterion)
+    console.log(this.query)
   }
 
   doDiscard(): void {

@@ -1,0 +1,39 @@
+.SingleTest {
+  width: 1200px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+.element-name {
+  margin-bottom: 10px;
+  font-size: 11pt;
+}
+#query-textfield {
+  margin-right: 10px;
+}
+.vorhanden1 {
+  background-color: rgba(127, 252, 2, 0.64);
+  padding: 5px;
+  height: 200px;
+}
+.vorhanden0 {
+  background-color: rgba(252, 2, 2, 0.58);
+  padding: 5px;
+  height: 200px;
+}
+.nichtvorhanden {
+  background-color: #fff4c2;
+  height: 40px;
+  padding: 5px;
+}
+.ergebnis-box {
+  margin-right: 20px;
+}
+.ergebnis-text {
+  padding-top: 11px;
+}
+.result-spinning-icon {
+  margin-left: 1em;
+  margin-top: 0.5em;
+  height: 2em;
+  width: 2em;
+}

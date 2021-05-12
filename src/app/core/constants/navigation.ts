@@ -23,6 +23,12 @@ export const mainNavItems: INavItem[] = [
     icon: 'wrench',
     translationKey: 'NAVIGATION.OPTIONS',
   },
+  {
+    routeTo: 'tests',
+    roles: ['CODEX_USER'],
+    icon: 'cog',
+    translationKey: 'NAVIGATION.TESTS',
+  },
 ]
 
 export const secondaryNavItems: INavItem[] = [
