@@ -24,6 +24,9 @@ describe('SideMenuComponent', () => {
       useFeatureOptionsPage(): boolean {
         return true
       },
+      useFeatureTestPage(): boolean {
+        return true
+      },
     } as FeatureService
 
     await TestBed.configureTestingModule({

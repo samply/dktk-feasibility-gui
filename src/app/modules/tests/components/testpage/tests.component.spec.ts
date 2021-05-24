@@ -21,6 +21,9 @@ describe('TestsComponent', () => {
     getPollingIntervall(): number {
       return 1
     },
+    getPatientResultLowerBoundary(): number {
+      return 10
+    },
   } as FeatureService
   beforeEach(async () => {
     await TestBed.configureTestingModule({

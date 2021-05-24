@@ -16,7 +16,7 @@
   </div>
 
   <ng-template ngFor let-item [ngForOf]="mainNavItems">
-    <ng-template [ngIf]="item.routeTo != 'options' || featureService.useFeatureOptionsPage()">
+    <ng-template [ngIf]="showPage(item.routeTo)">
       <a
         *numUserHasRole="item.roles"
         class="num-mat-list-item"

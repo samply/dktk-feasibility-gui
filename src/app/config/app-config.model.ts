@@ -27,11 +27,13 @@ export interface IAppConfig {
     extra: {
       displayvaluefiltericon: boolean
       showoptionspage: boolean
+      showtestpage: boolean
     }
   }
   options: {
     pollingtimeinseconds: number
     pollingintervallinseconds: number
+    lowerboundarypatientresult: number
   }
   mock: {
     terminology: boolean

@@ -26,12 +26,14 @@
     },
     "extra": {
       "displayvaluefiltericon": false,
-      "showoptionspage": false
+      "showoptionspage": false,
+      "showtestpage": false
     }
   },
   "options": {
     "pollingtimeinseconds": 10,
-    "pollingintervallinseconds": 1
+    "pollingintervallinseconds": 1,
+    "lowerboundarypatientresult": 10
   },
   "mock": {
     "terminology": false,
