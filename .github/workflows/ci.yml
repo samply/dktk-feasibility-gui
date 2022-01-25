@@ -68,3 +68,31 @@ jobs:
           ghcr.io/${{ steps.prep.outputs.repository }}:${{ steps.prep.outputs.version }}
           ghcr.io/${{ steps.prep.outputs.repository }}:latest
         push: true
+
+
+  release-feature:
+    if: ${{ startsWith(github.ref, 'refs/heads/feature') }}
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Prepare Version
+      id: prep
+      run: |
+        echo ::set-output name=repository::$(echo $GITHUB_REPOSITORY | tr '[:upper:]' '[:lower:]')
+
+    - name: Login to GitHub Docker Registry
+      uses: docker/login-action@v1
+      with:
+        registry: ghcr.io
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Build and push Docker image
+      uses: docker/build-push-action@v2
+      with:
+        context: .
+        tags: |
+          ghcr.io/${{ steps.prep.outputs.repository }}:latest
+        push: true
