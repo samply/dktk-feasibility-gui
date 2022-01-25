@@ -20,6 +20,9 @@ export class EditValueFilterComponent implements OnInit {
   @Input()
   filterType: string
 
+  @Input()
+  display: string
+
   OperatorOptions: typeof OperatorOptions = OperatorOptions
 
   selectedUnit: QuantityUnit

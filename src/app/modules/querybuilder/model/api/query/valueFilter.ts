@@ -1,6 +1,7 @@
 import { TerminologyCode } from '../terminology/terminology'
 import { transient } from '../annotations'
 import { AttributeDefinition, ValueDefinition } from '../terminology/valuedefinition'
+import { TimeRestrictionType } from './timerestriction'
 
 export class ValueFilter {
   type: OperatorOptions
@@ -33,6 +34,16 @@ export class ValueFilter {
 
   // CONCEPT
   selectedConcepts?: TerminologyCode[] = []
+
+  // DATE
+  dateType?: TimeRestrictionType
+  minDate?: Date // implicitly included date
+  maxDate?: Date // implicitly included date
+  beforeDate?: Date
+  afterDate?: Date
+
+  // STRING
+  inputString?: string
 }
 
 export class QuantityUnit {
@@ -54,4 +65,6 @@ export enum OperatorOptions {
   QUANTITY_COMPARATOR = 'quantity-comparator', // e.g. "< 27.10.2020"
   QUANTITY_RANGE = 'quantity-range', // e.g. ">= 27 and <= 30"
   CONCEPT = 'concept', // e.g. "weiblich, männlich"
+  DATE = 'date',
+  STRING = 'string',
 }

@@ -31,6 +31,9 @@ describe('ResultDetailsDialogComponent', () => {
       getPatientResultLowerBoundary(): number {
         return 10
       },
+      getDataset(): string {
+        return 'codex'
+      },
     } as FeatureService
 
     await TestBed.configureTestingModule({

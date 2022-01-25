@@ -15,7 +15,7 @@
   },
   "legal": {
     "version": "0.9.0",
-    "copyrightOwner": "ABIDE Team"
+    "copyrightOwner": "DKTK Team"
   },
   "features": {
     "v2": {
@@ -37,10 +37,10 @@
   "mock": {
     "terminology": false,
     "query": false,
-    "result": false
+    "result": true
   },
-  "stylesheet": "abideTheme",
+  "stylesheet": "codexTheme",
   "fhirport": "8082",
-  "dataset": "codex",
+  "dataset": "dktk",
   "queryVersion": "v2"
 }

@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core'
 import { TimeRestriction, TimeRestrictionType } from '../../../../model/api/query/timerestriction'
+import { ValueFilter } from '../../../../model/api/query/valueFilter'
+import { MatDatepickerInputEvent } from '@angular/material/datepicker'
 import { MAT_DATE_FORMATS } from '@angular/material/core'
 
 export const MY_DATE_FORMATS = {
@@ -24,10 +26,23 @@ export class EditTimeRestrictionComponent implements OnInit {
   @Input()
   timeRestriction: TimeRestriction
 
+  @Input()
+  modus: string
+
+  @Input()
+  filter: ValueFilter
+
   timeRestrictionOptions = Object.keys(TimeRestrictionType)
   timeRestrictionType: typeof TimeRestrictionType = TimeRestrictionType
+
+  dateType: TimeRestrictionType
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  testevent(type: string, event: MatDatepickerInputEvent<Date>): void {
+    console.log(type)
+    console.log(event.value)
+  }
 }

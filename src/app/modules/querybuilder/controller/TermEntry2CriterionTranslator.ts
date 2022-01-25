@@ -6,13 +6,14 @@ import {
   ValueDefinition,
   ValueType,
 } from '../model/api/terminology/valuedefinition'
-import { TimeRestriction } from '../model/api/query/timerestriction'
+import { TimeRestriction, TimeRestrictionType } from '../model/api/query/timerestriction'
 import { V2 } from '../model/api/annotations'
 import { AttributeFilter } from '../model/api/query/attributeFilter'
 
 export class TermEntry2CriterionTranslator {
   private useFeatureTimeRestrictions = false
   private queryVersion: string
+  private timeRestriction: TimeRestriction
 
   constructor(useFeatureTimeRestrictions = false, queryVersion) {
     this.useFeatureTimeRestrictions = useFeatureTimeRestrictions
@@ -71,6 +72,18 @@ export class TermEntry2CriterionTranslator {
       valueFilter.max = valueDefinition.max
       valueFilter.precision = valueDefinition.precision
       valueFilter.comparator = Comparator.GREATER_OR_EQUAL
+    } else if (valueDefinition.type === ValueType.DATE) {
+      valueFilter.type = OperatorOptions.DATE
+      valueFilter.valueDefinition.dateType = TimeRestrictionType.AT
+      valueFilter.valueDefinition.minDate = this.timeRestriction?.minDate
+        ? this.timeRestriction.minDate
+        : undefined
+      valueFilter.valueDefinition.maxDate = this.timeRestriction?.maxDate
+        ? this.timeRestriction.maxDate
+        : undefined
+    } else if (valueDefinition.type === ValueType.STRING) {
+      valueFilter.type = OperatorOptions.STRING
+      valueFilter.inputString = valueDefinition.inputString ? valueDefinition.inputString : ''
     }
 
     return valueFilter

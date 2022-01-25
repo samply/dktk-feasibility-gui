@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core'
 import { TimeRestriction, TimeRestrictionType } from '../../../../model/api/query/timerestriction'
 // @ts-ignore
 import moment from 'moment'
+import { ValueFilter } from '../../../../model/api/query/valueFilter'
 
 @Component({
   selector: 'num-display-time-restriction',
@@ -11,6 +12,12 @@ import moment from 'moment'
 export class DisplayTimeRestrictionComponent implements OnInit {
   @Input()
   timeRestriction: TimeRestriction
+
+  @Input()
+  modus: string
+
+  @Input()
+  filter: ValueFilter
 
   readonly typeLatest = TimeRestrictionType.BETWEEN
   timeRestrictionType: typeof TimeRestrictionType = TimeRestrictionType

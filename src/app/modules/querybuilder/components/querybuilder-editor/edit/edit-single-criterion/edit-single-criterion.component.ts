@@ -32,7 +32,10 @@ export class EditSingleCriterionComponent implements OnInit {
     this.querySnapshot = ObjectHelper.clone(data.query)
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log('test')
+    console.log(this.criterion)
+  }
 
   doSave(): void {
     this.dialogRef.close(this.queryModified)

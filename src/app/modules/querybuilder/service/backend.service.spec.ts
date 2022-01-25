@@ -35,6 +35,9 @@ describe('BackendService', () => {
     getQueryVersion(): string {
       return 'v2'
     },
+    getDataset(): string {
+      return 'codex'
+    },
   } as FeatureService
 
   beforeEach(async () => {
@@ -59,7 +62,7 @@ describe('BackendService', () => {
     jest.spyOn(featureService, 'mockTerminology').mockReturnValue(true)
 
     service.getCategories().subscribe((categories: Array<CategoryEntry>) => {
-      expect(categories).toEqual(new MockBackendDataProvider().getCategoryEntries())
+      expect(categories).toEqual(new MockBackendDataProvider(featureService).getCategoryEntries())
       done()
     })
   })
@@ -88,7 +91,7 @@ describe('BackendService', () => {
     jest.spyOn(featureService, 'mockTerminology').mockReturnValue(true)
 
     service.getTerminolgyTree(EXAMPLE_ID).subscribe((entry: TerminologyEntry) => {
-      expect(entry).toEqual(new MockBackendDataProvider().getTerminologyEntry('1'))
+      expect(entry).toEqual(new MockBackendDataProvider(featureService).getTerminologyEntry('1'))
       done()
     })
   })

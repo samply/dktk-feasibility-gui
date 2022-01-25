@@ -1,20 +1,46 @@
-<div *ngIf="timeRestriction" class="container">
-  <div *ngIf="timeRestriction.minDate || timeRestriction.maxDate">
-    <span *ngIf="timeRestriction.tvpe !== timeRestrictionType.BETWEEN">
-      {{ 'QUERYBUILDER.EDIT.TIMERESTRICTION.' + timeRestriction.tvpe | translate }}
-      {{ getDateFormatted(timeRestriction.minDate) }}
-    </span>
-    <span
-      *ngIf="
-        timeRestriction.tvpe === timeRestrictionType.BETWEEN &&
-        timeRestriction.minDate &&
-        timeRestriction.maxDate
-      "
-    >
-      {{ 'QUERYBUILDER.EDIT.TIMERESTRICTION.BETWEEN' | translate }}
-      {{ getDateFormatted(timeRestriction.minDate) }}
-      {{ 'QUERYBUILDER.EDIT.AND' | translate }}
-      {{ getDateFormatted(timeRestriction.maxDate) }}
-    </span>
-  </div>
+<div *ngIf="timeRestriction || filter" class="container">
+  <!--modus: Timerestriction-->
+  <span *ngIf="modus === 'TimeRistriction'">
+    <div *ngIf="timeRestriction.minDate || timeRestriction.maxDate">
+      <span *ngIf="timeRestriction.tvpe !== timeRestrictionType.BETWEEN" class="time-restriction">
+        {{ 'QUERYBUILDER.EDIT.TIMERESTRICTION.' + timeRestriction.tvpe | translate }}
+        {{ getDateFormatted(timeRestriction.minDate) }}
+      </span>
+      <span
+        *ngIf="
+          timeRestriction.tvpe === timeRestrictionType.BETWEEN &&
+          timeRestriction.minDate &&
+          timeRestriction.maxDate
+        "
+        class="time-restriction"
+      >
+        {{ 'QUERYBUILDER.EDIT.TIMERESTRICTION.BETWEEN' | translate }}
+        {{ getDateFormatted(timeRestriction.minDate) }}
+        {{ 'QUERYBUILDER.EDIT.AND' | translate }}
+        {{ getDateFormatted(timeRestriction.maxDate) }}
+      </span>
+    </div>
+  </span>
+
+  <!--modus: valueFilterDate-->
+  <span *ngIf="modus === 'valueFilterDate'">
+    <div *ngIf="filter.valueDefinition.minDate || filter.valueDefinition.maxDate">
+      <span *ngIf="filter.valueDefinition.dateType !== timeRestrictionType.BETWEEN">
+        {{ 'QUERYBUILDER.EDIT.TIMERESTRICTION.' + filter.valueDefinition.dateType | translate }}
+        {{ getDateFormatted(filter.valueDefinition.minDate) }}
+      </span>
+      <span
+        *ngIf="
+          filter.valueDefinition.dateType === timeRestrictionType.BETWEEN &&
+          filter.valueDefinition.minDate &&
+          filter.valueDefinition.maxDate
+        "
+      >
+        {{ 'QUERYBUILDER.EDIT.TIMERESTRICTION.BETWEEN' | translate }}
+        {{ getDateFormatted(filter.valueDefinition.minDate) }}
+        {{ 'QUERYBUILDER.EDIT.AND' | translate }}
+        {{ getDateFormatted(filter.valueDefinition.maxDate) }}
+      </span>
+    </div>
+  </span>
 </div>

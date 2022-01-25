@@ -41,4 +41,14 @@
         | translate: { min: filter.minValue, max: filter.maxValue, unit: filter.unit.display }
     }}
   </div>
+  <div *ngIf="filter.type === OperatorOptions.DATE">
+    <num-display-time-restriction
+      [modus]="'valueFilterDate'"
+      [filter]="filter"
+    ></num-display-time-restriction>
+  </div>
+  <div *ngIf="filter.type === OperatorOptions.STRING">
+    <span *ngIf="filter.display">{{ filter.display }}{{ ': ' }}></span>
+    <span>{{ filter.inputString }}</span>
+  </div>
 </div>

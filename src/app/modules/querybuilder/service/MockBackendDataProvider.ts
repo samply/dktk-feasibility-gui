@@ -6,6 +6,11 @@ import {
 } from '../model/api/terminology/terminology'
 import { ValueDefinition, ValueType } from '../model/api/terminology/valuedefinition'
 import { ObjectHelper } from '../controller/ObjectHelper'
+import MDSKJSON from '../../../../assets/mock/MDSK.json'
+import MDSBJSON from '../../../../assets/mock/MDSB.json'
+import ADTJSON from '../../../../assets/mock/ADT.json'
+import DiagnoseFHIR from '../../../../assets/mock/Diagnose.json'
+import { FeatureService } from '../../../service/feature.service'
 
 // noinspection JSMethodCanBeStatic
 export class MockBackendDataProvider {
@@ -21,6 +26,14 @@ export class MockBackendDataProvider {
   private readonly categoryV = { shortDisplay: 'V', display: 'Vital signs', catId: '5' }
   private readonly categoryO = { shortDisplay: 'O', display: 'Other', catId: '6' }
   private readonly categoryE = { shortDisplay: 'E', display: 'Tumorentität', catId: '7' }
+  private readonly categoryK = { shortDisplay: 'K', display: 'MDS-K (Klinische Daten)', catId: '8' }
+  private readonly categoryB = {
+    shortDisplay: 'B',
+    display: 'MDS-B (Biomaterial-Daten)',
+    catId: '9',
+  }
+  private readonly categoryAD = { shortDisplay: 'A', display: 'ADT', catId: '10' }
+  private readonly categoryDi = { shortDisplay: 'Di', display: 'Diagnose', catId: '11' }
 
   private readonly mapDisplay = new Map<[string, string], TerminologyEntry>()
   private readonly mapCode = new Map<[string, string], TerminologyEntry>()
@@ -659,7 +672,7 @@ export class MockBackendDataProvider {
     return ObjectHelper.clone(this.categoryEntries)
   }
 
-  public getTerminologyEntry(id: string): TerminologyEntry {
+  public getTerminologyEntry(id: string): any {
     switch (id) {
       case '1':
         return this.getTerminologyEntryAmnesis()
@@ -671,6 +684,12 @@ export class MockBackendDataProvider {
         return this.getTerminologyEntryOther()
       case '7':
         return this.getTerminologyEntryEntity()
+      case '8':
+        return ObjectHelper.clone(MDSKJSON)
+      case '9':
+        return ObjectHelper.clone(MDSBJSON)
+      case '10':
+        return ObjectHelper.clone(ADTJSON)
       default:
         return this.getTerminologyEntryEmpty(id)
     }
@@ -714,8 +733,8 @@ export class MockBackendDataProvider {
     return Array.from(result)
   }
 
-  constructor() {
-    this.initCategories()
+  constructor(private featureService: FeatureService) {
+    this.initCategories(this.featureService.getDataset())
     this.initAmnesis()
     this.initAmnesisLiver()
     this.initDemographics()
@@ -723,14 +742,22 @@ export class MockBackendDataProvider {
     this.initTermEntryMaps()
   }
 
-  private initCategories(): void {
-    this.categoryEntries.push(this.categoryA)
-    this.categoryEntries.push(this.categoryD)
-    this.categoryEntries.push(this.categoryL)
-    this.categoryEntries.push(this.categoryT)
-    this.categoryEntries.push(this.categoryV)
-    this.categoryEntries.push(this.categoryO)
-    this.categoryEntries.push(this.categoryE)
+  private initCategories(dataSet: string): void {
+    if (dataSet === 'codex' || dataSet === 'all') {
+      this.categoryEntries.push(this.categoryA)
+      this.categoryEntries.push(this.categoryD)
+      this.categoryEntries.push(this.categoryL)
+      this.categoryEntries.push(this.categoryT)
+      this.categoryEntries.push(this.categoryV)
+      this.categoryEntries.push(this.categoryO)
+    }
+    if (dataSet === 'dktk' || dataSet === 'all') {
+      this.categoryEntries.push(this.categoryE)
+      this.categoryEntries.push(this.categoryK)
+      this.categoryEntries.push(this.categoryB)
+      this.categoryEntries.push(this.categoryAD)
+      this.categoryEntries.push(this.categoryDi)
+    }
   }
 
   private initAmnesis(): void {

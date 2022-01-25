@@ -20,6 +20,9 @@ describe('ResultSimpleComponent', () => {
     getPatientResultLowerBoundary(): number {
       return 10
     },
+    getDataset(): string {
+      return 'codex'
+    },
   } as FeatureService
 
   beforeEach(async () => {

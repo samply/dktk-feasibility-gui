@@ -1,11 +1,11 @@
 import { Component, Inject, OnInit } from '@angular/core'
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog'
-import { QueryResult } from '../../../../model/api/result/QueryResult'
+import { QueryResult, QueryResultSB } from '../../../../model/api/result/QueryResult'
 import { Observable, Subscription } from 'rxjs'
 import { BackendService } from '../../../../service/backend.service'
 
 export class ResultDetailsDialogComponentData {
-  resultObservable$: Observable<QueryResult>
+  resultObservable$: Observable<QueryResultSB>
 }
 
 @Component({
@@ -14,7 +14,7 @@ export class ResultDetailsDialogComponentData {
   styleUrls: ['./result-details-dialog.component.scss'],
 })
 export class ResultDetailsDialogComponent implements OnInit {
-  result: QueryResult
+  result: QueryResultSB
   resultSubscription: Subscription
 
   constructor(
@@ -36,6 +36,6 @@ export class ResultDetailsDialogComponent implements OnInit {
 
   sortResult(resultTemp): void {
     this.result = resultTemp
-    this.result.resultLines.sort((a, b) => b.numberOfPatients - a.numberOfPatients)
+    // this.result.resultLines.sort((a, b) => b.numberOfPatients - a.numberOfPatients)
   }
 }

@@ -24,6 +24,7 @@ import { SearchTextTermEntryComponent } from '../search-text-term-entry/search-t
 import { FocusMonitor, FocusOrigin } from '@angular/cdk/a11y'
 import { cold } from 'jasmine-marbles'
 import { EventEmitter } from '@angular/core'
+import { FeatureService } from '../../../../../../service/feature.service'
 
 describe('SearchInputComponent', () => {
   const testBedConfig = {
@@ -52,6 +53,11 @@ describe('SearchInputComponent', () => {
 
   let component: SearchInputComponent
   let fixture: ComponentFixture<SearchInputComponent>
+  const featureService = {
+    getDataset(): string {
+      return 'codex'
+    },
+  } as FeatureService
 
   beforeEach(async () => {
     // Workaround: see https://github.com/telerik/kendo-angular/issues/1505
@@ -178,9 +184,14 @@ describe('SearchInputComponent', () => {
         },
         getTerminolgyEntrySearchResult(
           catId: string,
-          search: string,
+          search: string
         ): Observable<Array<TerminologyEntry>> {
-          return of(new MockBackendDataProvider().getTerminolgyEntrySearchResult(catId, search))
+          return of(
+            new MockBackendDataProvider(featureService).getTerminolgyEntrySearchResult(
+              catId,
+              search
+            )
+          )
         },
       } as BackendService
 
@@ -196,7 +207,7 @@ describe('SearchInputComponent', () => {
 
       // trigger the click
       const overlayContent = document.querySelector(
-        '.cdk-overlay-container num-search-text-overlay-content',
+        '.cdk-overlay-container num-search-text-overlay-content'
       )
       overlayContent.dispatchEvent(new Event('closeOverlay'))
 
@@ -208,8 +219,7 @@ describe('SearchInputComponent', () => {
       monitor(element: HTMLElement, checkChildren?: boolean): Observable<FocusOrigin> {
         return of({} as FocusOrigin)
       },
-      stopMonitoring(element: HTMLElement): void {
-      },
+      stopMonitoring(element: HTMLElement): void {},
     } as FocusMonitor
 
     it('overlay should remain closed when input field is not focused', () => {

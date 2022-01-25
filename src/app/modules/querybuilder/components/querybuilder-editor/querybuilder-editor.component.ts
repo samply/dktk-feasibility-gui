@@ -1,7 +1,7 @@
 import { AfterViewChecked, ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core'
 import { Query } from '../../model/api/query/query'
 import { QueryProviderService } from '../../service/query-provider.service'
-import { QueryResult } from '../../model/api/result/QueryResult'
+import { QueryResult, QueryResultSB } from '../../model/api/result/QueryResult'
 import { interval, Observable, Subscription, timer } from 'rxjs'
 import { BackendService } from '../../service/backend.service'
 import { map, share, switchAll, takeUntil } from 'rxjs/operators'
@@ -21,7 +21,7 @@ export class QuerybuilderEditorComponent implements OnInit, OnDestroy, AfterView
 
   query: Query
 
-  result: QueryResult
+  result: QueryResultSB
 
   resultUrl: string
 
@@ -31,7 +31,7 @@ export class QuerybuilderEditorComponent implements OnInit, OnDestroy, AfterView
 
   subscriptionPolling: Subscription
   private subscriptionResult: Subscription
-  public resultObservable$: Observable<QueryResult>
+  public resultObservable$: Observable<QueryResultSB>
 
   constructor(
     public queryProviderService: QueryProviderService,
@@ -80,7 +80,7 @@ export class QuerybuilderEditorComponent implements OnInit, OnDestroy, AfterView
     this.queryProviderService.store(query)
   }
 
-  startRequestingResult(resultUrl: string): void {
+  startRequestingResult(resultUrl: any): void {
     this.resultUrl = resultUrl
 
     this.resultObservable$ = interval(this.POLLING_INTERVALL_MILLISECONDS).pipe(
@@ -92,6 +92,12 @@ export class QuerybuilderEditorComponent implements OnInit, OnDestroy, AfterView
     this.subscriptionPolling = this.resultObservable$.subscribe(
       (result) => {
         this.result = result
+        let sum = 0
+        this.result.replySites.forEach((site) => {
+          // @ts-ignore
+          sum += site.donor.count
+        })
+        this.result.totalNumberOfPatients = sum
       },
       (error) => {
         console.error(error)
@@ -116,7 +122,14 @@ export class QuerybuilderEditorComponent implements OnInit, OnDestroy, AfterView
     this.subscriptionResult?.unsubscribe()
     this.subscriptionResult = this.backend
       .postQuery(this.query)
-      .subscribe((response) => this.startRequestingResult(response.location))
+      .subscribe((response) => this.startRequestingResult(response)) // response.location))
+  }
+
+  doSave(): void {
+    const dialogConfig = new MatDialogConfig()
+
+    dialogConfig.autoFocus = true
+    this.dialog.open(SaveDialogComponent, dialogConfig)
   }
 
   doSave(): void {

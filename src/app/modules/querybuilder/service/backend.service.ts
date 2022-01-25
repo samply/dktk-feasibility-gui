@@ -6,9 +6,11 @@ import { Observable, of } from 'rxjs'
 import { FeatureService } from '../../../service/feature.service'
 import { Query } from '../model/api/query/query'
 import { QueryResponse } from '../model/api/result/QueryResponse'
-import { QueryResult } from '../model/api/result/QueryResult'
+import { QueryResult, QueryResultSB } from '../model/api/result/QueryResult'
 import { MockBackendDataProvider } from './MockBackendDataProvider'
 import { ApiTranslator } from '../controller/ApiTranslator'
+import { HttpHeaders } from '@angular/common/http'
+import SearchbrokerResult from '../../../../assets/mock/MockedSearchbrokerResult.json'
 
 @Injectable({
   providedIn: 'root',
@@ -26,7 +28,7 @@ export class BackendService {
 
   public static MOCK_RESULT_URL = 'http://localhost:9999/result-of-query/12345'
 
-  private readonly mockBackendDataProvider = new MockBackendDataProvider()
+  private readonly mockBackendDataProvider = new MockBackendDataProvider(this.feature)
   lowerBoundary: number = this.feature.getPatientResultLowerBoundary()
 
   public getCategories(): Observable<Array<CategoryEntry>> {
@@ -61,7 +63,7 @@ export class BackendService {
     return this.http.get<Array<TerminologyEntry>>(url)
   }
 
-  public postQuery(query: Query): Observable<QueryResponse> {
+  public postQuery(query: Query): Observable<any> {
     if (this.feature.mockQuery()) {
       return of({ location: BackendService.MOCK_RESULT_URL })
     }
@@ -72,11 +74,23 @@ export class BackendService {
     }
     if (this.feature.getQueryVersion() === 'v2') {
       const queryV2 = new ApiTranslator().translateToV2(query)
-      return this.http.post<QueryResponse>(this.createUrl(BackendService.PATH_RUN_QUERY), queryV2)
+      // return this.http.post<QueryResponse>(this.createUrl(BackendService.PATH_RUN_QUERY), queryV2)
+
+      const headers = new HttpHeaders()
+        .set('Content-Type', 'application/json')
+        .set('Authorization', 'Basic ' + btoa('test123:test123'))
+        .set('Accept', 'text/plain; charset=utf-8')
+
+      const test = { query: JSON.stringify(queryV2), target: [], queryName: 'foo' }
+      return this.http.post<any>(
+        'http://localhost:8097/share_broker_rest_war/rest/searchbroker/structured-query/queries',
+        JSON.stringify(test),
+        { headers }
+      )
     }
   }
 
-  public getResult(resultUrl: string): Observable<QueryResult> {
+  public getResult(resultUrl: string): Observable<QueryResultSB> {
     if (this.feature.mockResult()) {
       const result = {
         totalNumberOfPatients: Math.floor(Math.random() * 1000),
@@ -89,10 +103,14 @@ export class BackendService {
         ],
       }
 
-      return of(result)
+      return of(SearchbrokerResult)
     }
+    const headers = new HttpHeaders().set('Authorization', 'Basic ' + btoa('test123:test123'))
 
-    return this.http.get<QueryResult>(resultUrl)
+    return this.http.get<QueryResultSB>(
+      'http://localhost:8097/share_broker_rest_war/rest/searchbroker/structured-query/' + resultUrl,
+      { headers }
+    )
   }
 
   createUrl(pathToResource: string, paramString?: string): string {
@@ -107,7 +125,6 @@ export class BackendService {
     if (paramString) {
       url += '?' + paramString
     }
-
     return url
   }
 

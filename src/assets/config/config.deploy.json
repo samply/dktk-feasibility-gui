@@ -26,7 +26,7 @@
     },
     "extra": {
       "displayvaluefiltericon": false,
-      "showoptionspage": false
+      "showoptionspage": true
     }
   },
   "options": {
@@ -41,6 +41,6 @@
   },
   "stylesheet": "abideTheme",
   "fhirport": "8082",
-  "dataset": "codex",
+  "dataset": "dktk",
   "queryVersion": "v2"
 }

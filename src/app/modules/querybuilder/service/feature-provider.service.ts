@@ -51,10 +51,12 @@ export class FeatureProviderService {
     if (newTheme === 'codexTheme') {
       document
         .getElementById('header-logo')
-        .setAttribute('src', 'assets/img/Logo_CODEX_rgb_cropped.png')
-      document.getElementById('header-logo').setAttribute('alt', 'CODEX Logo')
-      document.getElementById('footer-logo').setAttribute('src', 'assets/img/NUM_Logo.png')
-      document.getElementById('footer-logo').setAttribute('alt', 'NUM Logo')
+        .setAttribute('src', 'assets/img/Deutsches_Krebsforschungszentrum_Logo.svg')
+      document.getElementById('header-logo').setAttribute('alt', 'DKTK Logo')
+      document
+        .getElementById('footer-logo')
+        .setAttribute('src', 'assets/img/Deutsches_Krebsforschungszentrum_Logo.svg')
+      document.getElementById('footer-logo').setAttribute('alt', 'DKTK Logo')
     }
     if (newTheme === 'abideTheme') {
       document.getElementById('header-logo').setAttribute('src', 'assets/img/Abide_MI_cropped.jpg')

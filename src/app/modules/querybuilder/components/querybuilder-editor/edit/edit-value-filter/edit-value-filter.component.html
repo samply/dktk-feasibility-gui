@@ -198,4 +198,23 @@
       >{{ 'QUERYBUILDER.HINT.NO_VALUE_SELECTED' | translate }}</mat-hint
     >
   </div>
+
+  <!-- DATE -->
+  <div *ngIf="filter.type === OperatorOptions.DATE">
+    <span *ngIf="filterType === 'value'" class="required-flag"> * </span>
+    <num-edit-time-restriction
+      [modus]="'valueFilterDate'"
+      [filter]="filter"
+    ></num-edit-time-restriction>
+  </div>
+
+  <!-- STRING -->
+  <div *ngIf="filter.type === OperatorOptions.STRING">
+    <span *ngIf="filterType === 'value'" class="required-flag"> * </span>
+    <br />
+    <mat-form-field appearance="outline">
+      <mat-label>{{ display }}</mat-label>
+      <input matInput type="text" [(ngModel)]="filter.inputString" />
+    </mat-form-field>
+  </div>
 </div>

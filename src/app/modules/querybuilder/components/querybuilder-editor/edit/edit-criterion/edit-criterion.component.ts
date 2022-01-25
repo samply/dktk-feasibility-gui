@@ -62,6 +62,8 @@ export class EditCriterionComponent implements OnInit, AfterViewChecked {
     }
 
     this.showGroups = this.query.groups.length > 1
+
+    console.log(this.criterion)
   }
 
   ngAfterViewChecked(): void {

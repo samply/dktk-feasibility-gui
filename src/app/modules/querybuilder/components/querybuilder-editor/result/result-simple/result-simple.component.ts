@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core'
-import { QueryResult } from '../../../../model/api/result/QueryResult'
+import { QueryResult, QueryResultSB } from '../../../../model/api/result/QueryResult'
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog'
 import {
   ResultDetailsDialogComponentData,
@@ -15,10 +15,10 @@ import { BackendService } from '../../../../service/backend.service'
 })
 export class ResultSimpleComponent implements OnInit {
   @Input()
-  resultObservable: Observable<QueryResult>
+  resultObservable: Observable<QueryResultSB>
 
   @Input()
-  result: QueryResult
+  result: QueryResultSB
 
   @Input()
   showSpinner: boolean

@@ -1,0 +1,372 @@
+{
+  "replySites": [
+    {
+      "site": "Frankfurt",
+      "donor": {
+        "stratifications": [
+          {
+            "strata": [
+              {
+                "count": 2,
+                "label": "female"
+              },
+              {
+                "count": 2,
+                "label": "male"
+              }
+            ],
+            "title": "Gender"
+          },
+          {
+            "strata": [
+              {
+                "count": 1,
+                "label": "40"
+              },
+              {
+                "count": 1,
+                "label": "60"
+              },
+              {
+                "count": 1,
+                "label": "70"
+              },
+              {
+                "count": 1,
+                "label": "80"
+              }
+            ],
+            "title": "Age"
+          }
+        ],
+        "count": 100,
+        "label": "Donors"
+      },
+      "redirectUrl": "/user/show_inquiry.xhtml?inquiryId=5307&faces-redirect=true",
+      "sample": {
+        "stratifications": [
+          {
+            "strata": [
+              {
+                "count": 10,
+                "label": "tissue"
+              }
+            ],
+            "title": "SampleType"
+          }
+        ],
+        "count": 10,
+        "label": "Samples"
+      }
+    },
+    {
+      "site": "Würzburg",
+      "donor": {
+        "stratifications": [
+          {
+            "strata": [
+              {
+                "count": 1,
+                "label": "male"
+              }
+            ],
+            "title": "Gender"
+          },
+          {
+            "strata": [
+              {
+                "count": 1,
+                "label": "50"
+              }
+            ],
+            "title": "Age"
+          }
+        ],
+        "count": 10,
+        "label": "Donors"
+      },
+      "redirectUrl": "/user/show_inquiry.xhtml?inquiryId=1939&faces-redirect=true",
+      "sample": {
+        "stratifications": [
+          {
+            "strata": [
+              {
+                "count": 38,
+                "label": "liquid"
+              }
+            ],
+            "title": "SampleType"
+          }
+        ],
+        "count": 40,
+        "label": "Samples"
+      }
+    },
+    {
+      "site": "Heidelberg",
+      "donor": {
+        "stratifications": [
+          {
+            "strata": [
+              {
+                "count": 3,
+                "label": "male"
+              }
+            ],
+            "title": "Gender"
+          },
+          {
+            "strata": [
+              {
+                "count": 2,
+                "label": "50"
+              },
+              {
+                "count": 1,
+                "label": "60"
+              }
+            ],
+            "title": "Age"
+          }
+        ],
+        "count": 10,
+        "label": "Donors"
+      },
+      "redirectUrl": "/user/show_inquiry.xhtml?inquiryId=4064&faces-redirect=true",
+      "sample": {
+        "stratifications": [
+          {
+            "strata": [
+              {
+                "count": 3,
+                "label": "liquid"
+              },
+              {
+                "count": 3,
+                "label": "tissue"
+              }
+            ],
+            "title": "SampleType"
+          }
+        ],
+        "count": 10,
+        "label": "Samples"
+      }
+    },
+    {
+      "site": "Hannover",
+      "donor": {
+        "stratifications": [
+          {
+            "strata": [
+              {
+                "count": 2,
+                "label": "male"
+              }
+            ],
+            "title": "Gender"
+          },
+          {
+            "strata": [
+              {
+                "count": 1,
+                "label": "60"
+              },
+              {
+                "count": 1,
+                "label": "70"
+              }
+            ],
+            "title": "Age"
+          }
+        ],
+        "count": 10,
+        "label": "Donors"
+      },
+      "redirectUrl": "/user/show_inquiry.xhtml?inquiryId=3168&faces-redirect=true",
+      "sample": {
+        "stratifications": [
+          {
+            "strata": [
+              {
+                "count": 9,
+                "label": "other"
+              }
+            ],
+            "title": "SampleType"
+          }
+        ],
+        "count": 20,
+        "label": "Samples"
+      }
+    },
+    {
+      "site": "Jena",
+      "donor": {
+        "stratifications": [
+          {
+            "strata": [],
+            "title": "Gender"
+          },
+          {
+            "strata": [],
+            "title": "Age"
+          }
+        ],
+        "count": 0,
+        "label": "Donors"
+      },
+      "redirectUrl": "http://localhost:8181/DKTK-Teiler//user/show_inquiry.xhtml?inquiryId=6548&faces-redirect=true",
+      "sample": {
+        "stratifications": [
+          {
+            "strata": [],
+            "title": "SampleType"
+          }
+        ],
+        "count": 0,
+        "label": "Samples"
+      }
+    },
+    {
+      "site": "Berlin",
+      "donor": {
+        "stratifications": [
+          {
+            "strata": [],
+            "title": "Gender"
+          },
+          {
+            "strata": [],
+            "title": "Age"
+          }
+        ],
+        "count": 0,
+        "label": "Donors"
+      },
+      "redirectUrl": "/user/show_inquiry.xhtml?inquiryId=6394&faces-redirect=true",
+      "sample": {
+        "stratifications": [
+          {
+            "strata": [],
+            "title": "SampleType"
+          }
+        ],
+        "count": 0,
+        "label": "Samples"
+      }
+    },
+    {
+      "site": "Leipzig",
+      "donor": {
+        "stratifications": [
+          {
+            "strata": [],
+            "title": "Gender"
+          },
+          {
+            "strata": [],
+            "title": "Age"
+          }
+        ],
+        "count": 0,
+        "label": "Donors"
+      },
+      "redirectUrl": "/user/show_inquiry.xhtml?inquiryId=9856&faces-redirect=true",
+      "sample": {
+        "stratifications": [
+          {
+            "strata": [],
+            "title": "SampleType"
+          }
+        ],
+        "count": 0,
+        "label": "Samples"
+      }
+    },
+    {
+      "site": "München-HMGU",
+      "donor": {
+        "stratifications": [
+          {
+            "strata": [],
+            "title": "Gender"
+          },
+          {
+            "strata": [],
+            "title": "Age"
+          }
+        ],
+        "count": 0,
+        "label": "Donors"
+      },
+      "redirectUrl": "/user/show_inquiry.xhtml?inquiryId=3266&faces-redirect=true",
+      "sample": {
+        "stratifications": [
+          {
+            "strata": [],
+            "title": "SampleType"
+          }
+        ],
+        "count": 0,
+        "label": "Samples"
+      }
+    },
+    {
+      "site": "Lübeck",
+      "donor": {
+        "stratifications": [
+          {
+            "strata": [],
+            "title": "Gender"
+          },
+          {
+            "strata": [],
+            "title": "Age"
+          }
+        ],
+        "count": 0,
+        "label": "Donors"
+      },
+      "redirectUrl": "/user/show_inquiry.xhtml?inquiryId=6400&faces-redirect=true",
+      "sample": {
+        "stratifications": [
+          {
+            "strata": [],
+            "title": "SampleType"
+          }
+        ],
+        "count": 0,
+        "label": "Samples"
+      }
+    },
+    {
+      "site": "Aachen",
+      "donor": {
+        "stratifications": [
+          {
+            "strata": [],
+            "title": "Gender"
+          },
+          {
+            "strata": [],
+            "title": "Age"
+          }
+        ],
+        "count": 0,
+        "label": "Donors"
+      },
+      "redirectUrl": "http://www.company.org/cum/sonoras/user/show_inquiry.xhtml?inquiryId=3643&faces-redirect=true",
+      "sample": {
+        "stratifications": [
+          {
+            "strata": [],
+            "title": "SampleType"
+          }
+        ],
+        "count": 0,
+        "label": "Samples"
+      }
+    }
+  ]
+}

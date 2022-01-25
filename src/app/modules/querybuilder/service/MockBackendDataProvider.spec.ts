@@ -1,7 +1,13 @@
 import { MockBackendDataProvider } from './MockBackendDataProvider'
+import { FeatureService } from '../../../service/feature.service'
 
 describe('MockBackendDataProvider', () => {
-  const provider = new MockBackendDataProvider()
+  const featureService = {
+    getDataset(): string {
+      return 'codex'
+    },
+  } as FeatureService
+  const provider = new MockBackendDataProvider(featureService)
 
   it('getCategories', () => {
     expect(provider.getCategoryEntries().length).toBe(7)
