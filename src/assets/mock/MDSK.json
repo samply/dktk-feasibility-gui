@@ -1,0 +1,2708 @@
+  {
+    "display": "MDS-K (Klinische Daten)",
+    "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+    "leaf": false,
+    "selectable": false,
+    "termCode": {
+      "code": "MDS-K",
+      "display": "MDS-K (Klinische Daten)",
+      "system": "dktk"
+    },
+    "timeRestrictionAllowed": false,
+    "valueDefinitions": [],
+    "selected": false,
+    "entity": false,
+    "children": [
+      {
+        "display": "Aktueller Tumorstatus",
+        "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+        "leaf": false,
+        "selectable": false,
+        "termCode": {
+          "code": "urn:dktk:dataelementgroup:5:7",
+          "display": "Aktueller Tumorstatus",
+          "system": "num.codex"
+        },
+        "timeRestrictionAllowed": false,
+        "valueDefinitions": [],
+        "selected": false,
+        "entity": false,
+        "children": [
+          {
+            "display": "Datum des letztbekannten Verlaufs",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:47:3",
+              "display": "Datum des letztbekannten Verlaufs",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [],
+                "type": "date"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Ansprechen innerhalb der letzten 3 Monate",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:84:2",
+              "display": "Ansprechen innerhalb der letzten 3 Monate",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "X",
+                    "display": "Fehlende Angabe",
+                    "system": ""
+                  },
+                  {
+                    "code": "U",
+                    "display": "Beurteilung unmöglich",
+                    "system": ""
+                  },
+                  {
+                    "code": "R",
+                    "display": "Vollremission mit residualen Auffälligkeiten (CRr)",
+                    "system": ""
+                  },
+                  {
+                    "code": "B",
+                    "display": "Klinische Besserung des Zustandes, Kriterien für Teilremission jedoch nicht erfüllt (minimal response, MR)",
+                    "system": ""
+                  },
+                  {
+                    "code": "D",
+                    "display": "Divergentes Geschehen",
+                    "system": ""
+                  },
+                  {
+                    "code": "P",
+                    "display": "Progression",
+                    "system": ""
+                  },
+                  {
+                    "code": "K",
+                    "display": "Keine Änderung (no change, NC), stable disease",
+                    "system": ""
+                  },
+                  {
+                    "code": "T",
+                    "display": "Teilremission / mindestens 50% Rückgang des Tumors (partial remission, PR)",
+                    "system": ""
+                  },
+                  {
+                    "code": "V",
+                    "display": "Vollremission (complete remission, CR)",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "display": "Allgemeine Daten",
+        "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+        "leaf": false,
+        "selectable": false,
+        "termCode": {
+          "code": "urn:dktk:dataelementgroup:1:4",
+          "display": "Allgemeine Daten",
+          "system": "num.codex"
+        },
+        "timeRestrictionAllowed": false,
+        "valueDefinitions": [],
+        "selected": false,
+        "entity": false,
+        "children": [
+          {
+            "display": "Geburtsdatum",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:26:4",
+              "display": "Geburtsdatum",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [],
+                "type": "date"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "DKTK-ID",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:54:1",
+              "display": "DKTK-ID",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [],
+                "type": "string"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Geschlecht",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:1:3",
+              "display": "Geschlecht",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "M",
+                    "display": "männlich",
+                    "system": ""
+                  },
+                  {
+                    "code": "W",
+                    "display": "weiblich",
+                    "system": ""
+                  },
+                  {
+                    "code": "S",
+                    "display": "Sonstiges / intersexuell",
+                    "system": ""
+                  },
+                  {
+                    "code": "U",
+                    "display": "unbekannt",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "display": "Ansprechen auf Therapie",
+        "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+        "leaf": false,
+        "selectable": false,
+        "termCode": {
+          "code": "urn:dktk:dataelementgroup:4:4",
+          "display": "Ansprechen auf Therapie",
+          "system": "num.codex"
+        },
+        "timeRestrictionAllowed": false,
+        "valueDefinitions": [],
+        "selected": false,
+        "entity": false,
+        "children": [
+          {
+            "display": "Ansprechen im Verlauf",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:24:3",
+              "display": "Ansprechen im Verlauf",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "V",
+                    "display": "Vollremission (complete remission, CR)",
+                    "system": ""
+                  },
+                  {
+                    "code": "T",
+                    "display": "Teilremission / mindestens 50% Rückgang des Tumors (partial remission, PR)",
+                    "system": ""
+                  },
+                  {
+                    "code": "K",
+                    "display": "Keine Änderung (no change, NC), stable disease",
+                    "system": ""
+                  },
+                  {
+                    "code": "P",
+                    "display": "Progression",
+                    "system": ""
+                  },
+                  {
+                    "code": "D",
+                    "display": "Divergentes Geschehen",
+                    "system": ""
+                  },
+                  {
+                    "code": "B",
+                    "display": "Klinische Besserung des Zustandes, Kriterien für Teilremission jedoch nicht erfüllt (minimal response, MR)",
+                    "system": ""
+                  },
+                  {
+                    "code": "R",
+                    "display": "Vollremission mit residualen Auffälligkeiten (CRr)",
+                    "system": ""
+                  },
+                  {
+                    "code": "U",
+                    "display": "Beurteilung unmöglich",
+                    "system": ""
+                  },
+                  {
+                    "code": "X",
+                    "display": "Fehlende Angabe",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Untersuchungs-/ Befunddatum im Verlauf",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:25:4",
+              "display": "Untersuchungs-/ Befunddatum im Verlauf",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [],
+                "type": "date"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Datum Fernmetastasen",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:46:3",
+              "display": "Datum Fernmetastasen",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [],
+                "type": "date"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Datum lokales/regionäres Rezidiv",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:43:3",
+              "display": "Datum lokales/regionäres Rezidiv",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [],
+                "type": "date"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Datum Lymphknoten-Rezidiv",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:45:3",
+              "display": "Datum Lymphknoten-Rezidiv",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [],
+                "type": "date"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Fernmetastasen",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:74:2",
+              "display": "Fernmetastasen",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "K",
+                    "display": "Keine Fernmetastasen nachweisbar",
+                    "system": ""
+                  },
+                  {
+                    "code": "M",
+                    "display": "Verbliebene Fernmetastase(n)",
+                    "system": ""
+                  },
+                  {
+                    "code": "R",
+                    "display": "Neu aufgetretene Fernmetastase(n) bzw. Metastasenrezidiv",
+                    "system": ""
+                  },
+                  {
+                    "code": "T",
+                    "display": "Fernmetastasenl Residuen",
+                    "system": ""
+                  },
+                  {
+                    "code": "P",
+                    "display": "Fernmetastasen Progress",
+                    "system": ""
+                  },
+                  {
+                    "code": "N",
+                    "display": "Fernmetastasen No Change",
+                    "system": ""
+                  },
+                  {
+                    "code": "F",
+                    "display": "Fraglicher Befund",
+                    "system": ""
+                  },
+                  {
+                    "code": "U",
+                    "display": "Unbekannt",
+                    "system": ""
+                  },
+                  {
+                    "code": "X",
+                    "display": "Fehlende Angabe",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Lymphknoten-Rezidiv",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:73:2",
+              "display": "Lymphknoten-Rezidiv",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "K",
+                    "display": "Kein Lymphknotenbefall nachweisbar",
+                    "system": ""
+                  },
+                  {
+                    "code": "R",
+                    "display": "Neu aufgetretenes Lymphknotenrezidiv",
+                    "system": ""
+                  },
+                  {
+                    "code": "T",
+                    "display": "bekannter Lymphknotenbefall Residuen",
+                    "system": ""
+                  },
+                  {
+                    "code": "P",
+                    "display": "bekannter Lymphknotenbefall Progress",
+                    "system": ""
+                  },
+                  {
+                    "code": "N",
+                    "display": "bekannter Lymphknotenbefall No Change",
+                    "system": ""
+                  },
+                  {
+                    "code": "F",
+                    "display": "Fraglicher Befund",
+                    "system": ""
+                  },
+                  {
+                    "code": "U",
+                    "display": "Unbekannt",
+                    "system": ""
+                  },
+                  {
+                    "code": "X",
+                    "display": "Fehlende Angabe",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Lokales/regionäres Rezidiv",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:72:2",
+              "display": "Lokales/regionäres Rezidiv",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "K",
+                    "display": "Kein Tumor nachweisbar",
+                    "system": ""
+                  },
+                  {
+                    "code": "T",
+                    "display": "Tumorreste (Residualtumor)",
+                    "system": ""
+                  },
+                  {
+                    "code": "P",
+                    "display": "Tumorreste Residualtumor Progress",
+                    "system": ""
+                  },
+                  {
+                    "code": "N",
+                    "display": "Tumorreste Residualtumor No Change",
+                    "system": ""
+                  },
+                  {
+                    "code": "R",
+                    "display": "Lokalrezidiv",
+                    "system": ""
+                  },
+                  {
+                    "code": "F",
+                    "display": "Fraglicher Befund",
+                    "system": ""
+                  },
+                  {
+                    "code": "U",
+                    "display": "Unbekannt",
+                    "system": ""
+                  },
+                  {
+                    "code": "X",
+                    "display": "Fehlende Angabe",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "display": "Klassifikation von Tumoren",
+        "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+        "leaf": false,
+        "selectable": false,
+        "termCode": {
+          "code": "urn:dktk:dataelementgroup:2:12",
+          "display": "Klassifikation von Tumoren",
+          "system": "num.codex"
+        },
+        "timeRestrictionAllowed": false,
+        "valueDefinitions": [],
+        "selected": false,
+        "entity": false,
+        "children": [
+          {
+            "display": "TNM-Klassifikation",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": false,
+            "selectable": false,
+            "termCode": {
+              "code": "urn:dktk:dataelementgroup:13:14",
+              "display": "TNM-Klassifikation",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": [
+              {
+                "display": "TNM-M-Klassifikation",
+                "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+                "leaf": false,
+                "selectable": false,
+                "termCode": {
+                  "code": "urn:dktk:dataelementgroup:12:8",
+                  "display": "TNM-M-Klassifikation",
+                  "system": "num.codex"
+                },
+                "timeRestrictionAllowed": false,
+                "valueDefinitions": [],
+                "selected": false,
+                "entity": false,
+                "children": [
+                  {
+                    "display": "c/p/u-Präfix M",
+                    "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+                    "leaf": true,
+                    "selectable": true,
+                    "termCode": {
+                      "code": "urn:dktk:dataelement:80:1",
+                      "display": "c/p/u-Präfix M",
+                      "system": "num.codex"
+                    },
+                    "timeRestrictionAllowed": false,
+                    "valueDefinitions": [
+                      {
+                        "allowedUnits": [],
+                        "precision": 1,
+                        "selectableConcepts": [
+                          {
+                            "code": "c",
+                            "display": "Kategorie wurde durch klinische Angaben festgestellt",
+                            "system": ""
+                          },
+                          {
+                            "code": "p",
+                            "display": "Feststellung der Kategorie erfolgte durch eine pathohistologische Untersuchung",
+                            "system": ""
+                          },
+                          {
+                            "code": "u",
+                            "display": "Feststellung mit Ultraschall",
+                            "system": ""
+                          },
+                          {
+                            "code": "",
+                            "display": "Kategorie wurde durch klinische Angaben festgestellt",
+                            "system": ""
+                          }
+                        ],
+                        "type": "concept"
+                      }
+                    ],
+                    "selected": false,
+                    "entity": false,
+                    "children": []
+                  },
+                  {
+                    "display": "TNM-M",
+                    "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+                    "leaf": true,
+                    "selectable": true,
+                    "termCode": {
+                      "code": "urn:dktk:dataelement:99:1",
+                      "display": "TNM-M",
+                      "system": "num.codex"
+                    },
+                    "timeRestrictionAllowed": false,
+                    "valueDefinitions": [
+                      {
+                        "allowedUnits": [],
+                        "precision": 1,
+                        "selectableConcepts": [
+                          {
+                            "code": "2(cy-)",
+                            "display": "2(cy-)",
+                            "system": ""
+                          },
+                          {
+                            "code": "2(cy+)",
+                            "display": "2(cy+)",
+                            "system": ""
+                          },
+                          {
+                            "code": "2(mol-)",
+                            "display": "2(mol-)",
+                            "system": ""
+                          },
+                          {
+                            "code": "2(mol+)",
+                            "display": "2(mol+)",
+                            "system": ""
+                          },
+                          {
+                            "code": "2(i-)",
+                            "display": "2(i-)",
+                            "system": ""
+                          },
+                          {
+                            "code": "2(i+)",
+                            "display": "2(i+)",
+                            "system": ""
+                          },
+                          {
+                            "code": "1(cy-)",
+                            "display": "1(cy-)",
+                            "system": ""
+                          },
+                          {
+                            "code": "1(cy+)",
+                            "display": "1(cy+)",
+                            "system": ""
+                          },
+                          {
+                            "code": "1(mol-)",
+                            "display": "1(mol-)",
+                            "system": ""
+                          },
+                          {
+                            "code": "1(mol+)",
+                            "display": "1(mol+)",
+                            "system": ""
+                          },
+                          {
+                            "code": "1(i-)",
+                            "display": "1(i-)",
+                            "system": ""
+                          },
+                          {
+                            "code": "1e",
+                            "display": "1e",
+                            "system": ""
+                          },
+                          {
+                            "code": "1d",
+                            "display": "1d",
+                            "system": ""
+                          },
+                          {
+                            "code": "1(i+)",
+                            "display": "1(i+)",
+                            "system": ""
+                          },
+                          {
+                            "code": "0(cy-)",
+                            "display": "0(cy-)",
+                            "system": ""
+                          },
+                          {
+                            "code": "0(cy+)",
+                            "display": "0(cy+)",
+                            "system": ""
+                          },
+                          {
+                            "code": "0(mol-)",
+                            "display": "0(mol-)",
+                            "system": ""
+                          },
+                          {
+                            "code": "0(mol+)",
+                            "display": "0(mol+)",
+                            "system": ""
+                          },
+                          {
+                            "code": "0(i-)",
+                            "display": "0(i-)",
+                            "system": ""
+                          },
+                          {
+                            "code": "0(i+)",
+                            "display": "0(i+)",
+                            "system": ""
+                          },
+                          {
+                            "code": "2c",
+                            "display": "2c",
+                            "system": ""
+                          },
+                          {
+                            "code": "2b",
+                            "display": "2b",
+                            "system": ""
+                          },
+                          {
+                            "code": "2a",
+                            "display": "2a",
+                            "system": ""
+                          },
+                          {
+                            "code": "2",
+                            "display": "2",
+                            "system": ""
+                          },
+                          {
+                            "code": "1c",
+                            "display": "1c",
+                            "system": ""
+                          },
+                          {
+                            "code": "1b",
+                            "display": "1b",
+                            "system": ""
+                          },
+                          {
+                            "code": "1a",
+                            "display": "1a",
+                            "system": ""
+                          },
+                          {
+                            "code": "1",
+                            "display": "1",
+                            "system": ""
+                          },
+                          {
+                            "code": "0",
+                            "display": "0",
+                            "system": ""
+                          },
+                          {
+                            "code": "X",
+                            "display": "X",
+                            "system": ""
+                          }
+                        ],
+                        "type": "concept"
+                      }
+                    ],
+                    "selected": false,
+                    "entity": false,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "display": "TNM-N-Klassifikation",
+                "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+                "leaf": false,
+                "selectable": false,
+                "termCode": {
+                  "code": "urn:dktk:dataelementgroup:11:8",
+                  "display": "TNM-N-Klassifikation",
+                  "system": "num.codex"
+                },
+                "timeRestrictionAllowed": false,
+                "valueDefinitions": [],
+                "selected": false,
+                "entity": false,
+                "children": [
+                  {
+                    "display": "c/p/u-Präfix N",
+                    "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+                    "leaf": true,
+                    "selectable": true,
+                    "termCode": {
+                      "code": "urn:dktk:dataelement:79:1",
+                      "display": "c/p/u-Präfix N",
+                      "system": "num.codex"
+                    },
+                    "timeRestrictionAllowed": false,
+                    "valueDefinitions": [
+                      {
+                        "allowedUnits": [],
+                        "precision": 1,
+                        "selectableConcepts": [
+                          {
+                            "code": "c",
+                            "display": "Kategorie wurde durch klinische Angaben festgestellt",
+                            "system": ""
+                          },
+                          {
+                            "code": "p",
+                            "display": "Feststellung der Kategorie erfolgte durch eine pathohistologische Untersuchung",
+                            "system": ""
+                          },
+                          {
+                            "code": "u",
+                            "display": "Feststellung mit Ultraschall",
+                            "system": ""
+                          },
+                          {
+                            "code": "",
+                            "display": "Kategorie wurde durch klinische Angaben festgestellt",
+                            "system": ""
+                          }
+                        ],
+                        "type": "concept"
+                      }
+                    ],
+                    "selected": false,
+                    "entity": false,
+                    "children": []
+                  },
+                  {
+                    "display": "TNM-N",
+                    "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+                    "leaf": true,
+                    "selectable": true,
+                    "termCode": {
+                      "code": "urn:dktk:dataelement:101:1",
+                      "display": "TNM-N",
+                      "system": "num.codex"
+                    },
+                    "timeRestrictionAllowed": false,
+                    "valueDefinitions": [
+                      {
+                        "allowedUnits": [],
+                        "precision": 1,
+                        "selectableConcepts": [
+                          {
+                            "code": "(sn)(mol+)",
+                            "display": "(sn)(mol+)",
+                            "system": ""
+                          },
+                          {
+                            "code": "(sn)(mol-)",
+                            "display": "(sn)(mol-)",
+                            "system": ""
+                          },
+                          {
+                            "code": "(sn)(i+)",
+                            "display": "(sn)(i+)",
+                            "system": ""
+                          },
+                          {
+                            "code": "(sn)(i-)",
+                            "display": "(sn)(i-)",
+                            "system": ""
+                          },
+                          {
+                            "code": "(mol+)",
+                            "display": "(mol+)",
+                            "system": ""
+                          },
+                          {
+                            "code": "(mol-)",
+                            "display": "(mol-)",
+                            "system": ""
+                          },
+                          {
+                            "code": "(i+)",
+                            "display": "(i+)",
+                            "system": ""
+                          },
+                          {
+                            "code": "(i-)",
+                            "display": "(i-)",
+                            "system": ""
+                          },
+                          {
+                            "code": "X",
+                            "display": "X",
+                            "system": ""
+                          },
+                          {
+                            "code": "X(sn)",
+                            "display": "X(sn)",
+                            "system": ""
+                          },
+                          {
+                            "code": "0",
+                            "display": "0",
+                            "system": ""
+                          },
+                          {
+                            "code": "0(sn)",
+                            "display": "0(sn)",
+                            "system": ""
+                          },
+                          {
+                            "code": "0(i+)",
+                            "display": "0(i+)",
+                            "system": ""
+                          },
+                          {
+                            "code": "1",
+                            "display": "1",
+                            "system": ""
+                          },
+                          {
+                            "code": "1(sn)",
+                            "display": "1(sn)",
+                            "system": ""
+                          },
+                          {
+                            "code": "1mi",
+                            "display": "1mi",
+                            "system": ""
+                          },
+                          {
+                            "code": "1a",
+                            "display": "1a",
+                            "system": ""
+                          },
+                          {
+                            "code": "1b",
+                            "display": "1b",
+                            "system": ""
+                          },
+                          {
+                            "code": "1c",
+                            "display": "1c",
+                            "system": ""
+                          },
+                          {
+                            "code": "2",
+                            "display": "2",
+                            "system": ""
+                          },
+                          {
+                            "code": "2a",
+                            "display": "2a",
+                            "system": ""
+                          },
+                          {
+                            "code": "2b",
+                            "display": "2b",
+                            "system": ""
+                          },
+                          {
+                            "code": "2c",
+                            "display": "2c",
+                            "system": ""
+                          },
+                          {
+                            "code": "3",
+                            "display": "3",
+                            "system": ""
+                          },
+                          {
+                            "code": "3a",
+                            "display": "3a",
+                            "system": ""
+                          },
+                          {
+                            "code": "3b",
+                            "display": "3b",
+                            "system": ""
+                          },
+                          {
+                            "code": "3c",
+                            "display": "3c",
+                            "system": ""
+                          }
+                        ],
+                        "type": "concept"
+                      }
+                    ],
+                    "selected": false,
+                    "entity": false,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "display": "TNM-T-Klassifikation",
+                "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+                "leaf": false,
+                "selectable": false,
+                "termCode": {
+                  "code": "urn:dktk:dataelementgroup:10:8",
+                  "display": "TNM-T-Klassifikation",
+                  "system": "num.codex"
+                },
+                "timeRestrictionAllowed": false,
+                "valueDefinitions": [],
+                "selected": false,
+                "entity": false,
+                "children": [
+                  {
+                    "display": "c/p/u-Präfix T",
+                    "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+                    "leaf": true,
+                    "selectable": true,
+                    "termCode": {
+                      "code": "urn:dktk:dataelement:78:1",
+                      "display": "c/p/u-Präfix T",
+                      "system": "num.codex"
+                    },
+                    "timeRestrictionAllowed": false,
+                    "valueDefinitions": [
+                      {
+                        "allowedUnits": [],
+                        "precision": 1,
+                        "selectableConcepts": [
+                          {
+                            "code": "c",
+                            "display": "Kategorie wurde durch klinische Angaben festgestellt",
+                            "system": ""
+                          },
+                          {
+                            "code": "p",
+                            "display": "Feststellung der Kategorie erfolgte durch eine pathohistologische Untersuchung",
+                            "system": ""
+                          },
+                          {
+                            "code": "u",
+                            "display": "Feststellung mit Ultraschall",
+                            "system": ""
+                          },
+                          {
+                            "code": "",
+                            "display": "Kategorie wurde durch klinische Angaben festgestellt",
+                            "system": ""
+                          }
+                        ],
+                        "type": "concept"
+                      }
+                    ],
+                    "selected": false,
+                    "entity": false,
+                    "children": []
+                  },
+                  {
+                    "display": "TNM-T",
+                    "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+                    "leaf": true,
+                    "selectable": true,
+                    "termCode": {
+                      "code": "urn:dktk:dataelement:100:1",
+                      "display": "TNM-T",
+                      "system": "num.codex"
+                    },
+                    "timeRestrictionAllowed": false,
+                    "valueDefinitions": [
+                      {
+                        "allowedUnits": [],
+                        "precision": 1,
+                        "selectableConcepts": [
+                          {
+                            "code": "4e",
+                            "display": "4e",
+                            "system": ""
+                          },
+                          {
+                            "code": "4d",
+                            "display": "4d",
+                            "system": ""
+                          },
+                          {
+                            "code": "4c",
+                            "display": "4c",
+                            "system": ""
+                          },
+                          {
+                            "code": "4b",
+                            "display": "4b",
+                            "system": ""
+                          },
+                          {
+                            "code": "4a",
+                            "display": "4a",
+                            "system": ""
+                          },
+                          {
+                            "code": "4",
+                            "display": "4",
+                            "system": ""
+                          },
+                          {
+                            "code": "3d",
+                            "display": "3d",
+                            "system": ""
+                          },
+                          {
+                            "code": "3c",
+                            "display": "3c",
+                            "system": ""
+                          },
+                          {
+                            "code": "3b",
+                            "display": "3b",
+                            "system": ""
+                          },
+                          {
+                            "code": "3a",
+                            "display": "3a",
+                            "system": ""
+                          },
+                          {
+                            "code": "3",
+                            "display": "3",
+                            "system": ""
+                          },
+                          {
+                            "code": "2d",
+                            "display": "2d",
+                            "system": ""
+                          },
+                          {
+                            "code": "2c",
+                            "display": "2c",
+                            "system": ""
+                          },
+                          {
+                            "code": "2b",
+                            "display": "2b",
+                            "system": ""
+                          },
+                          {
+                            "code": "2a2",
+                            "display": "2a2",
+                            "system": ""
+                          },
+                          {
+                            "code": "2a1",
+                            "display": "2a1",
+                            "system": ""
+                          },
+                          {
+                            "code": "2a",
+                            "display": "2a",
+                            "system": ""
+                          },
+                          {
+                            "code": "2",
+                            "display": "2",
+                            "system": ""
+                          },
+                          {
+                            "code": "1d",
+                            "display": "1d",
+                            "system": ""
+                          },
+                          {
+                            "code": "1c",
+                            "display": "1c",
+                            "system": ""
+                          },
+                          {
+                            "code": "1b2",
+                            "display": "1b2",
+                            "system": ""
+                          },
+                          {
+                            "code": "1b1",
+                            "display": "1b1",
+                            "system": ""
+                          },
+                          {
+                            "code": "1b",
+                            "display": "1b",
+                            "system": ""
+                          },
+                          {
+                            "code": "1a2",
+                            "display": "1a2",
+                            "system": ""
+                          },
+                          {
+                            "code": "1a1",
+                            "display": "1a1",
+                            "system": ""
+                          },
+                          {
+                            "code": "1a",
+                            "display": "1a",
+                            "system": ""
+                          },
+                          {
+                            "code": "1",
+                            "display": "1",
+                            "system": ""
+                          },
+                          {
+                            "code": "1mic",
+                            "display": "1mic",
+                            "system": ""
+                          },
+                          {
+                            "code": "0",
+                            "display": "0",
+                            "system": ""
+                          },
+                          {
+                            "code": "a",
+                            "display": "a",
+                            "system": ""
+                          },
+                          {
+                            "code": "is",
+                            "display": "is",
+                            "system": ""
+                          },
+                          {
+                            "code": "X",
+                            "display": "X",
+                            "system": ""
+                          },
+                          {
+                            "code": "is(DCIS)",
+                            "display": "is(DCIS)",
+                            "system": ""
+                          },
+                          {
+                            "code": "is(LCIS)",
+                            "display": "is(LCIS)",
+                            "system": ""
+                          },
+                          {
+                            "code": "is(Paget)",
+                            "display": "Tis(Paget)",
+                            "system": ""
+                          },
+                          {
+                            "code": "T1mi",
+                            "display": "T1mi",
+                            "system": ""
+                          },
+                          {
+                            "code": "is(pu)",
+                            "display": "is(pu)",
+                            "system": ""
+                          },
+                          {
+                            "code": "is(pd)",
+                            "display": "is(pd)",
+                            "system": ""
+                          }
+                        ],
+                        "type": "concept"
+                      }
+                    ],
+                    "selected": false,
+                    "entity": false,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "display": "Datum der TNM-Dokumentation/Datum Befund",
+                "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+                "leaf": true,
+                "selectable": true,
+                "termCode": {
+                  "code": "urn:dktk:dataelement:2:3",
+                  "display": "Datum der TNM-Dokumentation/Datum Befund",
+                  "system": "num.codex"
+                },
+                "timeRestrictionAllowed": false,
+                "valueDefinitions": [
+                  {
+                    "allowedUnits": [],
+                    "precision": 1,
+                    "selectableConcepts": [],
+                    "type": "date"
+                  }
+                ],
+                "selected": false,
+                "entity": false,
+                "children": []
+              },
+              {
+                "display": "TNM-r-Symbol",
+                "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+                "leaf": true,
+                "selectable": true,
+                "termCode": {
+                  "code": "urn:dktk:dataelement:81:1",
+                  "display": "TNM-r-Symbol",
+                  "system": "num.codex"
+                },
+                "timeRestrictionAllowed": false,
+                "valueDefinitions": [
+                  {
+                    "allowedUnits": [],
+                    "precision": 1,
+                    "selectableConcepts": [
+                      {
+                        "code": "r",
+                        "display": "Klassifikation erfolgte zur Beurteilung eines Rezidivs",
+                        "system": ""
+                      },
+                      {
+                        "code": "",
+                        "display": "native Klassifikation vor Eintreten eines Rezidivs",
+                        "system": ""
+                      }
+                    ],
+                    "type": "concept"
+                  }
+                ],
+                "selected": false,
+                "entity": false,
+                "children": []
+              },
+              {
+                "display": "TNM-m-Symbol",
+                "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+                "leaf": true,
+                "selectable": true,
+                "termCode": {
+                  "code": "urn:dktk:dataelement:10:2",
+                  "display": "TNM-m-Symbol",
+                  "system": "num.codex"
+                },
+                "timeRestrictionAllowed": false,
+                "valueDefinitions": [
+                  {
+                    "allowedUnits": [],
+                    "precision": 1,
+                    "selectableConcepts": [],
+                    "type": "string"
+                  }
+                ],
+                "selected": false,
+                "entity": false,
+                "children": []
+              },
+              {
+                "display": "TNM-Version",
+                "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+                "leaf": true,
+                "selectable": true,
+                "termCode": {
+                  "code": "urn:dktk:dataelement:18:2",
+                  "display": "TNM-Version",
+                  "system": "num.codex"
+                },
+                "timeRestrictionAllowed": false,
+                "valueDefinitions": [
+                  {
+                    "allowedUnits": [],
+                    "precision": 1,
+                    "selectableConcepts": [],
+                    "type": "string"
+                  }
+                ],
+                "selected": false,
+                "entity": false,
+                "children": []
+              },
+              {
+                "display": "TNM-y-Symbol",
+                "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+                "leaf": true,
+                "selectable": true,
+                "termCode": {
+                  "code": "urn:dktk:dataelement:82:1",
+                  "display": "TNM-y-Symbol",
+                  "system": "num.codex"
+                },
+                "timeRestrictionAllowed": false,
+                "valueDefinitions": [
+                  {
+                    "allowedUnits": [],
+                    "precision": 1,
+                    "selectableConcepts": [
+                      {
+                        "code": "y",
+                        "display": "Klassifikation erfolgte während oder nach initialer multimodaler Therapie",
+                        "system": ""
+                      },
+                      {
+                        "code": "",
+                        "display": "native Klassifikation",
+                        "system": ""
+                      }
+                    ],
+                    "type": "concept"
+                  }
+                ],
+                "selected": false,
+                "entity": false,
+                "children": []
+              }
+            ]
+          },
+          {
+            "display": "Alter bei Erstdiagnose",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:28:1",
+              "display": "Alter bei Erstdiagnose",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Datum diagnostische Sicherung",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:21:3",
+              "display": "Datum diagnostische Sicherung",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [],
+                "type": "date"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Gesamtbeurteilung Resttumor",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:20:3",
+              "display": "Gesamtbeurteilung Resttumor",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "R0",
+                    "display": "kein Residualtumor",
+                    "system": ""
+                  },
+                  {
+                    "code": "R1",
+                    "display": "Mikroskopischer Residualtumor",
+                    "system": ""
+                  },
+                  {
+                    "code": "R2",
+                    "display": "Makroskopischer Residualtumor",
+                    "system": ""
+                  },
+                  {
+                    "code": "R1(is)",
+                    "display": "In-Situ-Rest",
+                    "system": ""
+                  },
+                  {
+                    "code": "R1(cy+)",
+                    "display": "Cytologischer Rest",
+                    "system": ""
+                  },
+                  {
+                    "code": "RX",
+                    "display": "Vorhandensein von Residualtumor kann nicht beurteilt werden",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Diagnose",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:29:2",
+              "display": "Diagnose",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [],
+                "type": "string"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Fernmetastasen vorhanden",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:77:1",
+              "display": "Fernmetastasen vorhanden",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "nicht erfasst",
+                    "display": "nicht erfasst",
+                    "system": ""
+                  },
+                  {
+                    "code": "ja",
+                    "display": "ja",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "ICD-Katalog (Version)",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:3:2",
+              "display": "ICD-Katalog (Version)",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [],
+                "type": "string"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Grading",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:9:2",
+              "display": "Grading",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "0",
+                    "display": "malignes Melanom der Konjunktiva",
+                    "system": ""
+                  },
+                  {
+                    "code": "1",
+                    "display": "gut differenziert",
+                    "system": ""
+                  },
+                  {
+                    "code": "2",
+                    "display": "mäßig differenziert",
+                    "system": ""
+                  },
+                  {
+                    "code": "3",
+                    "display": "schlecht differenziert",
+                    "system": ""
+                  },
+                  {
+                    "code": "4",
+                    "display": "undifferenziert",
+                    "system": ""
+                  },
+                  {
+                    "code": "X",
+                    "display": "nicht bestimmbar",
+                    "system": ""
+                  },
+                  {
+                    "code": "L",
+                    "display": "low grade (G1 oder G2)",
+                    "system": ""
+                  },
+                  {
+                    "code": "M",
+                    "display": "intermediate (G2 oder G3)",
+                    "system": ""
+                  },
+                  {
+                    "code": "H",
+                    "display": "high grade (G3 oder G4)",
+                    "system": ""
+                  },
+                  {
+                    "code": "B",
+                    "display": "Borderline",
+                    "system": ""
+                  },
+                  {
+                    "code": "U",
+                    "display": "unbekannt",
+                    "system": ""
+                  },
+                  {
+                    "code": "T",
+                    "display": "trifft nicht zu",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "ICD-O Katalog Morphologie (Version)",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:8:2",
+              "display": "ICD-O Katalog Morphologie (Version)",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [],
+                "type": "string"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "ICD-O Katalog Topographie (Version)",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:5:2",
+              "display": "ICD-O Katalog Topographie (Version)",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [],
+                "type": "string"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Lokalisation",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:4:2",
+              "display": "Lokalisation",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [],
+                "type": "string"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Lokale Beurteilung Resttumor",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:19:2",
+              "display": "Lokale Beurteilung Resttumor",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "R0",
+                    "display": "kein Residualtumor",
+                    "system": ""
+                  },
+                  {
+                    "code": "R1",
+                    "display": "Mikroskopischer Residualtumor",
+                    "system": ""
+                  },
+                  {
+                    "code": "R2",
+                    "display": "Makroskopischer Residualtumor",
+                    "system": ""
+                  },
+                  {
+                    "code": "R1(is)",
+                    "display": "In-Situ-Rest",
+                    "system": ""
+                  },
+                  {
+                    "code": "R1(cy+)",
+                    "display": "Cytologischer Rest",
+                    "system": ""
+                  },
+                  {
+                    "code": "RX",
+                    "display": "Vorhandensein von Residualtumor kann nicht beurteilt werden",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Seitenlokalisation",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:6:2",
+              "display": "Seitenlokalisation",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "L",
+                    "display": "Links",
+                    "system": ""
+                  },
+                  {
+                    "code": "R",
+                    "display": "Rechts",
+                    "system": ""
+                  },
+                  {
+                    "code": "B",
+                    "display": "Beidseitig",
+                    "system": ""
+                  },
+                  {
+                    "code": "M",
+                    "display": "Mittellinie / Mittig",
+                    "system": ""
+                  },
+                  {
+                    "code": "U",
+                    "display": "Unbekannt",
+                    "system": ""
+                  },
+                  {
+                    "code": "T",
+                    "display": "Trifft nicht zu",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Morphologie",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:7:2",
+              "display": "Morphologie",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [],
+                "type": "string"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Tumor Diagnosedatum",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:83:3",
+              "display": "Tumor Diagnosedatum",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [],
+                "type": "date"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Lokalisation Fernmetastasen",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:98:1",
+              "display": "Lokalisation Fernmetastasen",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "SPL",
+                    "display": "Milz",
+                    "system": ""
+                  },
+                  {
+                    "code": "GEN",
+                    "display": "Generalisierte Metastasierung",
+                    "system": ""
+                  },
+                  {
+                    "code": "OTH",
+                    "display": "Andere Organe",
+                    "system": ""
+                  },
+                  {
+                    "code": "SKI",
+                    "display": "Haut",
+                    "system": ""
+                  },
+                  {
+                    "code": "ADR",
+                    "display": "Nebennieren",
+                    "system": ""
+                  },
+                  {
+                    "code": "PER",
+                    "display": "Peritoneum",
+                    "system": ""
+                  },
+                  {
+                    "code": "PLE",
+                    "display": "Pleura",
+                    "system": ""
+                  },
+                  {
+                    "code": "MAR",
+                    "display": "Knochenmark",
+                    "system": ""
+                  },
+                  {
+                    "code": "LYM",
+                    "display": "Lymphknoten",
+                    "system": ""
+                  },
+                  {
+                    "code": "BRA",
+                    "display": "Hirn",
+                    "system": ""
+                  },
+                  {
+                    "code": "HEP",
+                    "display": "Leber",
+                    "system": ""
+                  },
+                  {
+                    "code": "OSS",
+                    "display": "Knochen",
+                    "system": ""
+                  },
+                  {
+                    "code": "PUL",
+                    "display": "Lunge",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "UICC Stadium",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:89:1",
+              "display": "UICC Stadium",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "0",
+                    "display": "0",
+                    "system": ""
+                  },
+                  {
+                    "code": "0a",
+                    "display": "0a",
+                    "system": ""
+                  },
+                  {
+                    "code": "0is",
+                    "display": "0is",
+                    "system": ""
+                  },
+                  {
+                    "code": "I",
+                    "display": "I",
+                    "system": ""
+                  },
+                  {
+                    "code": "IA",
+                    "display": "IA",
+                    "system": ""
+                  },
+                  {
+                    "code": "IA1",
+                    "display": "IA1",
+                    "system": ""
+                  },
+                  {
+                    "code": "IA2",
+                    "display": "IA2",
+                    "system": ""
+                  },
+                  {
+                    "code": "IB",
+                    "display": "IB",
+                    "system": ""
+                  },
+                  {
+                    "code": "IB1",
+                    "display": "IB1",
+                    "system": ""
+                  },
+                  {
+                    "code": "IB2",
+                    "display": "IB2",
+                    "system": ""
+                  },
+                  {
+                    "code": "IC",
+                    "display": "IC",
+                    "system": ""
+                  },
+                  {
+                    "code": "II",
+                    "display": "II",
+                    "system": ""
+                  },
+                  {
+                    "code": "IIA",
+                    "display": "IIA",
+                    "system": ""
+                  },
+                  {
+                    "code": "IIA1",
+                    "display": "IIA1",
+                    "system": ""
+                  },
+                  {
+                    "code": "IIA2",
+                    "display": "IIA2",
+                    "system": ""
+                  },
+                  {
+                    "code": "IIB",
+                    "display": "IIB",
+                    "system": ""
+                  },
+                  {
+                    "code": "IIC",
+                    "display": "IIC",
+                    "system": ""
+                  },
+                  {
+                    "code": "III",
+                    "display": "III",
+                    "system": ""
+                  },
+                  {
+                    "code": "IIIA",
+                    "display": "IIIA",
+                    "system": ""
+                  },
+                  {
+                    "code": "IIIB",
+                    "display": "IIIB",
+                    "system": ""
+                  },
+                  {
+                    "code": "IIIC",
+                    "display": "IIIC",
+                    "system": ""
+                  },
+                  {
+                    "code": "IIIC1",
+                    "display": "IIIC1",
+                    "system": ""
+                  },
+                  {
+                    "code": "IIIC2",
+                    "display": "IIIC2",
+                    "system": ""
+                  },
+                  {
+                    "code": "IV",
+                    "display": "IV",
+                    "system": ""
+                  },
+                  {
+                    "code": "IVA",
+                    "display": "IVA",
+                    "system": ""
+                  },
+                  {
+                    "code": "IVB",
+                    "display": "IVB",
+                    "system": ""
+                  },
+                  {
+                    "code": "IVC",
+                    "display": "IVC",
+                    "system": ""
+                  },
+                  {
+                    "code": "IS",
+                    "display": "IS",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "display": "Therapie des Tumors",
+        "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+        "leaf": false,
+        "selectable": false,
+        "termCode": {
+          "code": "urn:dktk:dataelementgroup:3:4",
+          "display": "Therapie des Tumors",
+          "system": "num.codex"
+        },
+        "timeRestrictionAllowed": false,
+        "valueDefinitions": [],
+        "selected": false,
+        "entity": false,
+        "children": [
+          {
+            "display": "Hormontherapie",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:39:2",
+              "display": "Hormontherapie",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Intention OP",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:23:3",
+              "display": "Intention OP",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "K",
+                    "display": "kurativ",
+                    "system": ""
+                  },
+                  {
+                    "code": "P",
+                    "display": "palliativ",
+                    "system": ""
+                  },
+                  {
+                    "code": "D",
+                    "display": "diagnostisch",
+                    "system": ""
+                  },
+                  {
+                    "code": "R",
+                    "display": "Revision/Komplikation",
+                    "system": ""
+                  },
+                  {
+                    "code": "S",
+                    "display": "sonstiges",
+                    "system": ""
+                  },
+                  {
+                    "code": "X",
+                    "display": "Fehlende Angabe",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Immuntherapie",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:38:2",
+              "display": "Immuntherapie",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Intention Strahlentherapie",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:67:2",
+              "display": "Intention Strahlentherapie",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "K",
+                    "display": "kurativ",
+                    "system": ""
+                  },
+                  {
+                    "code": "P",
+                    "display": "palliativ",
+                    "system": ""
+                  },
+                  {
+                    "code": "S",
+                    "display": "Sonstiges",
+                    "system": ""
+                  },
+                  {
+                    "code": "X",
+                    "display": "Keine Angabe",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Intention Chemotherapie",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:69:2",
+              "display": "Intention Chemotherapie",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "K",
+                    "display": "kurativ",
+                    "system": ""
+                  },
+                  {
+                    "code": "P",
+                    "display": "palliativ",
+                    "system": ""
+                  },
+                  {
+                    "code": "S",
+                    "display": "sonstiges",
+                    "system": ""
+                  },
+                  {
+                    "code": "X",
+                    "display": "Keine Angabe",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Knochenmarktransplantation",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:40:2",
+              "display": "Knochenmarktransplantation",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "OP",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:33:2",
+              "display": "OP",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Chemotherapie",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:36:2",
+              "display": "Chemotherapie",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Strahlentherapie",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:34:2",
+              "display": "Strahlentherapie",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Strahlentherapie Stellung zu operativer Therapie",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:68:3",
+              "display": "Strahlentherapie Stellung zu operativer Therapie",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "O",
+                    "display": "ohne Bezug zu einer operativen Therapie",
+                    "system": ""
+                  },
+                  {
+                    "code": "A",
+                    "display": "adjuvant",
+                    "system": ""
+                  },
+                  {
+                    "code": "N",
+                    "display": "neoadjuvant",
+                    "system": ""
+                  },
+                  {
+                    "code": "I",
+                    "display": "intraoperativ",
+                    "system": ""
+                  },
+                  {
+                    "code": "S",
+                    "display": "sonstiges",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Weitere Therapien",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:41:3",
+              "display": "Weitere Therapien",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Systemische Therapie Stellung zu operativer Therapie",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:70:3",
+              "display": "Systemische Therapie Stellung zu operativer Therapie",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "O",
+                    "display": "ohne Bezug zu einer operativen Therapie",
+                    "system": ""
+                  },
+                  {
+                    "code": "A",
+                    "display": "adjuvant",
+                    "system": ""
+                  },
+                  {
+                    "code": "N",
+                    "display": "neoadjuvant",
+                    "system": ""
+                  },
+                  {
+                    "code": "I",
+                    "display": "intraoperativ",
+                    "system": ""
+                  },
+                  {
+                    "code": "S",
+                    "display": "sonstiges",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Sonstige Therapieart",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:71:2",
+              "display": "Sonstige Therapieart",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [],
+                "type": "string"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "display": "Vitalstatus",
+        "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+        "leaf": false,
+        "selectable": false,
+        "termCode": {
+          "code": "urn:dktk:dataelementgroup:6:4",
+          "display": "Vitalstatus",
+          "system": "num.codex"
+        },
+        "timeRestrictionAllowed": false,
+        "valueDefinitions": [],
+        "selected": false,
+        "entity": false,
+        "children": [
+          {
+            "display": "Datum des letztbekannten Vitalstatus",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:48:3",
+              "display": "Datum des letztbekannten Vitalstatus",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [],
+                "type": "date"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Vitalstatus",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:dktk:dataelement:53:3",
+              "display": "Vitalstatus",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "lebend",
+                    "display": "lebend",
+                    "system": ""
+                  },
+                  {
+                    "code": "verstorben",
+                    "display": "verstorben",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          }
+        ]
+      }
+    ]
+  }

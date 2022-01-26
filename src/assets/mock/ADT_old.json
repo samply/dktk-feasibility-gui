@@ -1,0 +1,3594 @@
+  {
+    "display": "ADT",
+    "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+    "leaf": false,
+    "selectable": false,
+    "termCode": {
+      "code": "ADT",
+      "display": "ADT",
+      "system": "dktk"
+    },
+    "timeRestrictionAllowed": false,
+    "valueDefinitions": [],
+    "selected": false,
+    "entity": false,
+    "children": [
+      {
+        "display": "Patienten Stammdaten",
+        "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+        "leaf": false,
+        "selectable": false,
+        "termCode": {
+          "code": "urn:adt:dataelementgroup:1:2",
+          "display": "Patienten Stammdaten",
+          "system": "num.codex"
+        },
+        "timeRestrictionAllowed": false,
+        "valueDefinitions": [],
+        "selected": false,
+        "entity": false,
+        "children": [
+          {
+            "display": "Patienten Titel",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:4:1",
+              "display": "Patienten Titel",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Patienten Nachname",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:3:1",
+              "display": "Patienten Nachname",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Patienten Vornamen",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:6:1",
+              "display": "Patienten Vornamen",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Patienten Geburtsname",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:7:1",
+              "display": "Patienten Geburtsname",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Krankenkassennr.",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:2:1",
+              "display": "Krankenkassennr.",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Patienten Namenszusätze",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:5:1",
+              "display": "Patienten Namenszusätze",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Patienten Geschlecht",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:9:2",
+              "display": "Patienten Geschlecht",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "M",
+                    "display": "männlich",
+                    "system": ""
+                  },
+                  {
+                    "code": "W",
+                    "display": "weiblich",
+                    "system": ""
+                  },
+                  {
+                    "code": "S",
+                    "display": "Sonstiges / intersexuell",
+                    "system": ""
+                  },
+                  {
+                    "code": "U",
+                    "display": "unbekannt",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Patienten frühere Namen",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:8:1",
+              "display": "Patienten frühere Namen",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Patienten Land",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:12:1",
+              "display": "Patienten Land",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Patienten Hausnummer",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:11:1",
+              "display": "Patienten Hausnummer",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Patienten Straße",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:10:1",
+              "display": "Patienten Straße",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Patienten PLZ",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:13:1",
+              "display": "Patienten PLZ",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Patienten Geburtsdatum",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:26:1",
+              "display": "Patienten Geburtsdatum",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Patienten Ort",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:14:1",
+              "display": "Patienten Ort",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Krankenversichertennummer",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:1:2",
+              "display": "Krankenversichertennummer",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "display": "Melder Stammdaten",
+        "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+        "leaf": false,
+        "selectable": false,
+        "termCode": {
+          "code": "urn:adt:dataelementgroup:2:1",
+          "display": "Melder Stammdaten",
+          "system": "num.codex"
+        },
+        "timeRestrictionAllowed": false,
+        "valueDefinitions": [],
+        "selected": false,
+        "entity": false,
+        "children": [
+          {
+            "display": "Melder Krankenhaus, Abteilung, Station, Praxis",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:16:1",
+              "display": "Melder Krankenhaus, Abteilung, Station, Praxis",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Melder Meldende Institutions-ID",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:15:1",
+              "display": "Melder Meldende Institutions-ID",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Melder Anschrift",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:18:1",
+              "display": "Melder Anschrift",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Melder Name Arzt",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:17:1",
+              "display": "Melder Name Arzt",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Melder PLZ",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:19:1",
+              "display": "Melder PLZ",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Melder Ort",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:20:1",
+              "display": "Melder Ort",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Melder Bankname",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:21:1",
+              "display": "Melder Bankname",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Melder Meldedatum",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:25:1",
+              "display": "Melder Meldedatum",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Melder Kontoinhaber",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:22:1",
+              "display": "Melder Kontoinhaber",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Melder BIC",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:23:1",
+              "display": "Melder BIC",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Melder IBAN",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:24:1",
+              "display": "Melder IBAN",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "display": "Histologie",
+        "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+        "leaf": false,
+        "selectable": false,
+        "termCode": {
+          "code": "urn:adt:dataelementgroup:4:1",
+          "display": "Histologie",
+          "system": "num.codex"
+        },
+        "timeRestrictionAllowed": false,
+        "valueDefinitions": [],
+        "selected": false,
+        "entity": false,
+        "children": [
+          {
+            "display": "Histologie-Einsendenummer",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:36:1",
+              "display": "Histologie-Einsendenummer",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Tumor Histologiedatum",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:35:1",
+              "display": "Tumor Histologiedatum",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Morphologie Freitext ",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:39:1",
+              "display": "Morphologie Freitext ",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Morphologie ICD-O Version ",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:38:1",
+              "display": "Morphologie ICD-O Version ",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Morphologie-Code",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:37:1",
+              "display": "Morphologie-Code",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Grading",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:40:1",
+              "display": "Grading",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "0",
+                    "display": "malignes Melanom der Konjunktiva",
+                    "system": ""
+                  },
+                  {
+                    "code": "1",
+                    "display": "gut differenziert",
+                    "system": ""
+                  },
+                  {
+                    "code": "2",
+                    "display": "mäßig differenziert",
+                    "system": ""
+                  },
+                  {
+                    "code": "3",
+                    "display": "schlecht differenziert",
+                    "system": ""
+                  },
+                  {
+                    "code": "4",
+                    "display": "undifferenziert",
+                    "system": ""
+                  },
+                  {
+                    "code": "X",
+                    "display": "nicht bestimmbar",
+                    "system": ""
+                  },
+                  {
+                    "code": "L",
+                    "display": "low grade (G1 oder G2)",
+                    "system": ""
+                  },
+                  {
+                    "code": "M",
+                    "display": "intermediate (G2 oder G3)",
+                    "system": ""
+                  },
+                  {
+                    "code": "H",
+                    "display": "high grade (G3 oder G4)",
+                    "system": ""
+                  },
+                  {
+                    "code": "B",
+                    "display": "Borderline",
+                    "system": ""
+                  },
+                  {
+                    "code": "U",
+                    "display": "unbekannt",
+                    "system": ""
+                  },
+                  {
+                    "code": "T",
+                    "display": "trifft nicht zu",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Anzahl der untersuchten Lymphknoten",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:41:1",
+              "display": "Anzahl der untersuchten Lymphknoten",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Anzahl der befallenen Sentinel-Lymphknoten ",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:44:1",
+              "display": "Anzahl der befallenen Sentinel-Lymphknoten ",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Anzahl der befallenen Lymphknoten",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:42:1",
+              "display": "Anzahl der befallenen Lymphknoten",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Anzahl der untersuchten Sentinel - Lymphknoten ",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:43:1",
+              "display": "Anzahl der untersuchten Sentinel - Lymphknoten ",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "display": "TNM-Klassifikation",
+        "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+        "leaf": false,
+        "selectable": false,
+        "termCode": {
+          "code": "urn:adt:dataelementgroup:5:1",
+          "display": "TNM-Klassifikation",
+          "system": "num.codex"
+        },
+        "timeRestrictionAllowed": false,
+        "valueDefinitions": [],
+        "selected": false,
+        "entity": false,
+        "children": [
+          {
+            "display": "TNM Version",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:46:1",
+              "display": "TNM Version",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "TNM Datum",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:45:1",
+              "display": "TNM Datum",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "TNM r-Symbol ",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:48:1",
+              "display": "TNM r-Symbol ",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "r",
+                    "display": "Klassifikation erfolgte zur Beurteilung eines Rezidivs",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "TNM y-Symbol",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:47:1",
+              "display": "TNM y-Symbol",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "y",
+                    "display": "Klassifikation erfolgte während oder nach initialer multimodaler Therapie",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "TNM a-Symbol ",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:49:1",
+              "display": "TNM a-Symbol ",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "a",
+                    "display": "Klassifikation erfolgte durch Autopsie",
+                    "system": ""
+                  },
+                  {
+                    "code": "(leer)",
+                    "display": "Klassifikation erfolgte nicht durch Autopsie",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "TNM c/p/u-Präfix T",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:50:1",
+              "display": "TNM c/p/u-Präfix T",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "c",
+                    "display": "Kategorie wurde durch klinische Angaben festgestellt",
+                    "system": ""
+                  },
+                  {
+                    "code": "p",
+                    "display": "Feststellung der Kategorie erfolgte durch eine pathohistologische Untersuchung",
+                    "system": ""
+                  },
+                  {
+                    "code": "u",
+                    "display": "Feststellung mit Ultraschall",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "TNM c/p/u-Präfix N ",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:51:1",
+              "display": "TNM c/p/u-Präfix N ",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "c",
+                    "display": "Kategorie wurde durch klinische Angaben festgestellt",
+                    "system": ""
+                  },
+                  {
+                    "code": "p",
+                    "display": "Feststellung der Kategorie erfolgte durch eine pathohistologische Untersuchung",
+                    "system": ""
+                  },
+                  {
+                    "code": "u",
+                    "display": "Feststellung mit Ultraschall",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "TNM c/p/u-Präfix M ",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:52:1",
+              "display": "TNM c/p/u-Präfix M ",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "c",
+                    "display": "Kategorie wurde durch klinische Angaben festgestellt",
+                    "system": ""
+                  },
+                  {
+                    "code": "p",
+                    "display": "Feststellung der Kategorie erfolgte durch eine pathohistologische Untersuchung",
+                    "system": ""
+                  },
+                  {
+                    "code": "u",
+                    "display": "Feststellung mit Ultraschall",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "TNM T-Kategorie",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:53:1",
+              "display": "TNM T-Kategorie",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "TNM m-Symbol",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:54:1",
+              "display": "TNM m-Symbol",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "TNM L-Kategorie",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:57:1",
+              "display": "TNM L-Kategorie",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "TNM M-Kategorie",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:56:1",
+              "display": "TNM M-Kategorie",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "TNM N-Kategorie",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:55:1",
+              "display": "TNM N-Kategorie",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "TNM V-Kategorie",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:58:1",
+              "display": "TNM V-Kategorie",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "TNM S-Kategorie",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:60:1",
+              "display": "TNM S-Kategorie",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "TNM Pn-Kategorie ",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:59:1",
+              "display": "TNM Pn-Kategorie ",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "display": "Weitere Klassifikation",
+        "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+        "leaf": false,
+        "selectable": false,
+        "termCode": {
+          "code": "urn:adt:dataelementgroup:6:1",
+          "display": "Weitere Klassifikation",
+          "system": "num.codex"
+        },
+        "timeRestrictionAllowed": false,
+        "valueDefinitions": [],
+        "selected": false,
+        "entity": false,
+        "children": [
+          {
+            "display": "Hämatoonkologische und sonstige Klassifikationen Name",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:62:1",
+              "display": "Hämatoonkologische und sonstige Klassifikationen Name",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Hämatoonkologische und sonstige Klassifikationen Datum",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:61:1",
+              "display": "Hämatoonkologische und sonstige Klassifikationen Datum",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Hämatoonkologische und sonstige Klassifikationen Stadium",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:63:1",
+              "display": "Hämatoonkologische und sonstige Klassifikationen Stadium",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "display": "Residualstatus",
+        "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+        "leaf": false,
+        "selectable": false,
+        "termCode": {
+          "code": "urn:adt:dataelementgroup:7:1",
+          "display": "Residualstatus",
+          "system": "num.codex"
+        },
+        "timeRestrictionAllowed": false,
+        "valueDefinitions": [],
+        "selected": false,
+        "entity": false,
+        "children": [
+          {
+            "display": "Beurteilung des lokalen Residualstatus nach Abschluss der Operation",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:108:1",
+              "display": "Beurteilung des lokalen Residualstatus nach Abschluss der Operation",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "R0",
+                    "display": "kein Residualtumor",
+                    "system": ""
+                  },
+                  {
+                    "code": "R1",
+                    "display": "Mikroskopischer Residualtumor",
+                    "system": ""
+                  },
+                  {
+                    "code": "R2",
+                    "display": "Makroskopischer Residualtumor",
+                    "system": ""
+                  },
+                  {
+                    "code": "R1(is)",
+                    "display": "In-Situ-Rest",
+                    "system": ""
+                  },
+                  {
+                    "code": "R1(cy+)",
+                    "display": "Cytologischer Rest",
+                    "system": ""
+                  },
+                  {
+                    "code": "RX",
+                    "display": "Vorhandensein von Residualtumor kann nicht beurteilt werden",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Gesamtbeurteilung des Residualstatus nach Abschluss Primärtherapie",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:64:1",
+              "display": "Gesamtbeurteilung des Residualstatus nach Abschluss Primärtherapie",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "R0",
+                    "display": "kein Residualtumor",
+                    "system": ""
+                  },
+                  {
+                    "code": "R1",
+                    "display": "Mikroskopischer Residualtumor",
+                    "system": ""
+                  },
+                  {
+                    "code": "R2",
+                    "display": "Makroskopischer Residualtumor",
+                    "system": ""
+                  },
+                  {
+                    "code": "R1(is)",
+                    "display": "In-Situ-Rest",
+                    "system": ""
+                  },
+                  {
+                    "code": "R1(cy+)",
+                    "display": "Cytologischer Rest",
+                    "system": ""
+                  },
+                  {
+                    "code": "RX",
+                    "display": "Vorhandensein von Residualtumor kann nicht beurteilt werden",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "display": "Fernmetastasen",
+        "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+        "leaf": false,
+        "selectable": false,
+        "termCode": {
+          "code": "urn:adt:dataelementgroup:8:1",
+          "display": "Fernmetastasen",
+          "system": "num.codex"
+        },
+        "timeRestrictionAllowed": false,
+        "valueDefinitions": [],
+        "selected": false,
+        "entity": false,
+        "children": [
+          {
+            "display": "Lokalisation von Fernmetastasen",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:65:1",
+              "display": "Lokalisation von Fernmetastasen",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "PUL",
+                    "display": "Lunge",
+                    "system": ""
+                  },
+                  {
+                    "code": "OSS",
+                    "display": "Knochen",
+                    "system": ""
+                  },
+                  {
+                    "code": "HEP",
+                    "display": "Leber",
+                    "system": ""
+                  },
+                  {
+                    "code": "BRA",
+                    "display": "Hirn",
+                    "system": ""
+                  },
+                  {
+                    "code": "LYM",
+                    "display": "Lymphknoten",
+                    "system": ""
+                  },
+                  {
+                    "code": "MAR",
+                    "display": "Knochenmark",
+                    "system": ""
+                  },
+                  {
+                    "code": "PLE",
+                    "display": "Pleura",
+                    "system": ""
+                  },
+                  {
+                    "code": "PER",
+                    "display": "Peritoneum",
+                    "system": ""
+                  },
+                  {
+                    "code": "ADR",
+                    "display": "Nebennieren",
+                    "system": ""
+                  },
+                  {
+                    "code": "SKI",
+                    "display": "Haut",
+                    "system": ""
+                  },
+                  {
+                    "code": "OTH",
+                    "display": "Andere Organe",
+                    "system": ""
+                  },
+                  {
+                    "code": "GEN",
+                    "display": "Generalisierte Metastasierung",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Datum der diagnostischen Sicherung von Fernmetastasen",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:66:1",
+              "display": "Datum der diagnostischen Sicherung von Fernmetastasen",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "display": "OP",
+        "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+        "leaf": false,
+        "selectable": false,
+        "termCode": {
+          "code": "urn:adt:dataelementgroup:9:1",
+          "display": "OP",
+          "system": "num.codex"
+        },
+        "timeRestrictionAllowed": false,
+        "valueDefinitions": [],
+        "selected": false,
+        "entity": false,
+        "children": [
+          {
+            "display": "Intention der Operation",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:68:1",
+              "display": "Intention der Operation",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "K",
+                    "display": "kurativ",
+                    "system": ""
+                  },
+                  {
+                    "code": "P",
+                    "display": "palliativ",
+                    "system": ""
+                  },
+                  {
+                    "code": "D",
+                    "display": "diagnostisch",
+                    "system": ""
+                  },
+                  {
+                    "code": "R",
+                    "display": "Revision/Komplikation",
+                    "system": ""
+                  },
+                  {
+                    "code": "S",
+                    "display": "sonstiges",
+                    "system": ""
+                  },
+                  {
+                    "code": "X",
+                    "display": "Fehlende Angabe",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "OP Datum",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:69:1",
+              "display": "OP Datum",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "OPS",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:70:1",
+              "display": "OPS",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "OPS-Version",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:71:1",
+              "display": "OPS-Version",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "OP Komplikationen",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:72:1",
+              "display": "OP Komplikationen",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "N",
+                    "display": "Nein",
+                    "system": ""
+                  },
+                  {
+                    "code": "U",
+                    "display": "unbekannt",
+                    "system": ""
+                  },
+                  {
+                    "code": "ABD",
+                    "display": "Abszeß in einem Drainagekanal",
+                    "system": ""
+                  },
+                  {
+                    "code": "ABS",
+                    "display": "Abszeß, intraabdominaler oder intrathorakaler",
+                    "system": ""
+                  },
+                  {
+                    "code": "ASF",
+                    "display": "Abszeß, subfaszialer",
+                    "system": ""
+                  },
+                  {
+                    "code": "ANI",
+                    "display": "Akute Niereninsuffizienz",
+                    "system": ""
+                  },
+                  {
+                    "code": "AEP",
+                    "display": "Alkoholentzugspsychose",
+                    "system": ""
+                  },
+                  {
+                    "code": "ALR",
+                    "display": "Allergische Reaktion ohne Schocksymptomatik",
+                    "system": ""
+                  },
+                  {
+                    "code": "ANS",
+                    "display": "Anaphylaktischer Schock",
+                    "system": ""
+                  },
+                  {
+                    "code": "AEE",
+                    "display": "Anastomoseninsuffizienz einer Enterostomie",
+                    "system": ""
+                  },
+                  {
+                    "code": "API",
+                    "display": "Apoplektischer Insult",
+                    "system": ""
+                  },
+                  {
+                    "code": "BIF",
+                    "display": "Biliäre Fistel",
+                    "system": ""
+                  },
+                  {
+                    "code": "BOG",
+                    "display": "Blutung, obere gastrointestinale (z.B \"Streßulkus\")",
+                    "system": ""
+                  },
+                  {
+                    "code": "BOE",
+                    "display": "Bolusverlegung eines Endotubus",
+                    "system": ""
+                  },
+                  {
+                    "code": "BSI",
+                    "display": "Bronchusstumpfinsuffizienz",
+                    "system": ""
+                  },
+                  {
+                    "code": "CHI",
+                    "display": "Cholangitis",
+                    "system": ""
+                  },
+                  {
+                    "code": "DAI",
+                    "display": "Darmanastomoseinsuffizienz",
+                    "system": ""
+                  },
+                  {
+                    "code": "DPS",
+                    "display": "Darmpassagestörungen (z.B. protrahierte Atonie, Subileus, Ileus)",
+                    "system": ""
+                  },
+                  {
+                    "code": "DIC",
+                    "display": "Disseminierte intravasale Koagulopathie",
+                    "system": ""
+                  },
+                  {
+                    "code": "DEP",
+                    "display": "Drogenentzugspsychose",
+                    "system": ""
+                  },
+                  {
+                    "code": "DLU",
+                    "display": "Druck- und Lagerungsschäden, z.B. Dekubitalulzera",
+                    "system": ""
+                  },
+                  {
+                    "code": "DSI",
+                    "display": "Duodenalstumpfinsuffizienz",
+                    "system": ""
+                  },
+                  {
+                    "code": "ENF",
+                    "display": "Enterale Fistel",
+                    "system": ""
+                  },
+                  {
+                    "code": "GER",
+                    "display": "Gerinnungsstörung",
+                    "system": ""
+                  },
+                  {
+                    "code": "HEM",
+                    "display": "Hämatemesis",
+                    "system": ""
+                  },
+                  {
+                    "code": "HUR",
+                    "display": "Hämaturie",
+                    "system": ""
+                  },
+                  {
+                    "code": "HAE",
+                    "display": "Hämorrhagischer Schock",
+                    "system": ""
+                  },
+                  {
+                    "code": "HFI",
+                    "display": "Harnfistel",
+                    "system": ""
+                  },
+                  {
+                    "code": "HNK",
+                    "display": "Hautnekrose im Operationsbereich",
+                    "system": ""
+                  },
+                  {
+                    "code": "HZI",
+                    "display": "Herzinsuffizienz",
+                    "system": ""
+                  },
+                  {
+                    "code": "HRS",
+                    "display": "Herzrhythmusstörungen",
+                    "system": ""
+                  },
+                  {
+                    "code": "HNA",
+                    "display": "Hirnnervenausfälle",
+                    "system": ""
+                  },
+                  {
+                    "code": "HOP",
+                    "display": "Hirnorganisches Psychosyndrom (z.B. \"Durchgangssyndrom\")",
+                    "system": ""
+                  },
+                  {
+                    "code": "HYB",
+                    "display": "Hyperbilirubinämie",
+                    "system": ""
+                  },
+                  {
+                    "code": "HYF",
+                    "display": "Hypopharynxfistel",
+                    "system": ""
+                  },
+                  {
+                    "code": "IFV",
+                    "display": "Ileofemorale Venenthrombose",
+                    "system": ""
+                  },
+                  {
+                    "code": "KAS",
+                    "display": "Kardiogener Schock",
+                    "system": ""
+                  },
+                  {
+                    "code": "KES",
+                    "display": "Komplikationen einer Stomaanlage",
+                    "system": ""
+                  },
+                  {
+                    "code": "KIM",
+                    "display": "Komplikation eines Implantates, z.B. Dislokation",
+                    "system": ""
+                  },
+                  {
+                    "code": "KRA",
+                    "display": "Krampfanfall",
+                    "system": ""
+                  },
+                  {
+                    "code": "KDS",
+                    "display": "Kurzdarmsyndrom",
+                    "system": ""
+                  },
+                  {
+                    "code": "LEV",
+                    "display": "Leberversagen",
+                    "system": ""
+                  },
+                  {
+                    "code": "LOE",
+                    "display": "Lungenödem",
+                    "system": ""
+                  },
+                  {
+                    "code": "LYF",
+                    "display": "Lymphfistel",
+                    "system": ""
+                  },
+                  {
+                    "code": "LYE",
+                    "display": "Lymphozele",
+                    "system": ""
+                  },
+                  {
+                    "code": "MES",
+                    "display": "Magenentleerungsstörung",
+                    "system": ""
+                  },
+                  {
+                    "code": "MIL",
+                    "display": "Mechanischer Ileus",
+                    "system": ""
+                  },
+                  {
+                    "code": "MED",
+                    "display": "Mediastinitis",
+                    "system": ""
+                  },
+                  {
+                    "code": "MAT",
+                    "display": "Mesenterialarterien- oder -venenthrombose",
+                    "system": ""
+                  },
+                  {
+                    "code": "MYI",
+                    "display": "Myokardinfarkt",
+                    "system": ""
+                  },
+                  {
+                    "code": "RNB",
+                    "display": "Nachblutung, revisionsbedürftig, anderweitig nicht erwähnt",
+                    "system": ""
+                  },
+                  {
+                    "code": "NAB",
+                    "display": "Nachblutung, nicht revisionsbedürftig, anderweitig nicht erwähnt",
+                    "system": ""
+                  },
+                  {
+                    "code": "NIN",
+                    "display": "Nahtinsuffizienz, anderweitig nicht erwähnt",
+                    "system": ""
+                  },
+                  {
+                    "code": "OES",
+                    "display": "Ösophagitis",
+                    "system": ""
+                  },
+                  {
+                    "code": "OSM",
+                    "display": "Osteitis, Osteomyelitis",
+                    "system": ""
+                  },
+                  {
+                    "code": "PAF",
+                    "display": "Pankreasfistel",
+                    "system": ""
+                  },
+                  {
+                    "code": "PIT",
+                    "display": "Pankreatitis",
+                    "system": ""
+                  },
+                  {
+                    "code": "PAB",
+                    "display": "Peranale Blutung",
+                    "system": ""
+                  },
+                  {
+                    "code": "PPA",
+                    "display": "Periphere Parese",
+                    "system": ""
+                  },
+                  {
+                    "code": "PAV",
+                    "display": "Peripherer arterieller Verschluß (Embolie, Thrombose)",
+                    "system": ""
+                  },
+                  {
+                    "code": "PER",
+                    "display": "Peritonitis",
+                    "system": ""
+                  },
+                  {
+                    "code": "PLB",
+                    "display": "Platzbauch",
+                    "system": ""
+                  },
+                  {
+                    "code": "PEY",
+                    "display": "Pleuraempyem",
+                    "system": ""
+                  },
+                  {
+                    "code": "PLE",
+                    "display": "Pleuraerguß",
+                    "system": ""
+                  },
+                  {
+                    "code": "PMN",
+                    "display": "Pneumonie",
+                    "system": ""
+                  },
+                  {
+                    "code": "PNT",
+                    "display": "Pneumothorax",
+                    "system": ""
+                  },
+                  {
+                    "code": "PDA",
+                    "display": "Protrahierte Darmatonie (paralytischer Ileus)",
+                    "system": ""
+                  },
+                  {
+                    "code": "PAE",
+                    "display": "Pulmonalarterienembolie",
+                    "system": ""
+                  },
+                  {
+                    "code": "RPA",
+                    "display": "Rekurrensparese",
+                    "system": ""
+                  },
+                  {
+                    "code": "RIN",
+                    "display": "Respiratorische Insuffizienz",
+                    "system": ""
+                  },
+                  {
+                    "code": "SKI",
+                    "display": "Septische Komplikation eines Implantates",
+                    "system": ""
+                  },
+                  {
+                    "code": "SES",
+                    "display": "Septischer Schock",
+                    "system": ""
+                  },
+                  {
+                    "code": "SFH",
+                    "display": "Störungen des Flüssigkeits-, Elektrolyt- und Säurebasenhaushaltes",
+                    "system": ""
+                  },
+                  {
+                    "code": "STK",
+                    "display": "Stomakomplikation (z.B. Blutung, Nekrose, Stenose)",
+                    "system": ""
+                  },
+                  {
+                    "code": "TZP",
+                    "display": "Thrombozytopenie",
+                    "system": ""
+                  },
+                  {
+                    "code": "TIA",
+                    "display": "TIA (transitorische ischämische Attacke) oder Rind (reversibles ischämisches neurologisches Defizit)",
+                    "system": ""
+                  },
+                  {
+                    "code": "TRZ",
+                    "display": "Transfusionszwischenfall",
+                    "system": ""
+                  },
+                  {
+                    "code": "WUH",
+                    "display": "Wundhämatom (konservativ therapiert)",
+                    "system": ""
+                  },
+                  {
+                    "code": "WSS",
+                    "display": "Wundheilungsstörung, subkutane",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "display": "Strahlentherapie",
+        "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+        "leaf": false,
+        "selectable": false,
+        "termCode": {
+          "code": "urn:adt:dataelementgroup:10:1",
+          "display": "Strahlentherapie",
+          "system": "num.codex"
+        },
+        "timeRestrictionAllowed": false,
+        "valueDefinitions": [],
+        "selected": false,
+        "entity": false,
+        "children": [
+          {
+            "display": "Strahlentherapie Stellung zu operativer Therapie",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:74:1",
+              "display": "Strahlentherapie Stellung zu operativer Therapie",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "O",
+                    "display": "ohne Bezug zu einer operativen Therapie",
+                    "system": ""
+                  },
+                  {
+                    "code": "A",
+                    "display": "adjuvant",
+                    "system": ""
+                  },
+                  {
+                    "code": "N",
+                    "display": "neoadjuvant",
+                    "system": ""
+                  },
+                  {
+                    "code": "I",
+                    "display": "intraoperativ",
+                    "system": ""
+                  },
+                  {
+                    "code": "S",
+                    "display": "sonstiges",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Strahlentherapie Zielgebiet",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:75:1",
+              "display": "Strahlentherapie Zielgebiet",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Intention der Strahlentherapie",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:73:1",
+              "display": "Intention der Strahlentherapie",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "K",
+                    "display": "kurativ",
+                    "system": ""
+                  },
+                  {
+                    "code": "P",
+                    "display": "palliativ",
+                    "system": ""
+                  },
+                  {
+                    "code": "S",
+                    "display": "sonstiges",
+                    "system": ""
+                  },
+                  {
+                    "code": "X",
+                    "display": "Keine Angabe",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Strahlentherapie Seite Zielgebiet",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:76:1",
+              "display": "Strahlentherapie Seite Zielgebiet",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "L",
+                    "display": "links",
+                    "system": ""
+                  },
+                  {
+                    "code": "R",
+                    "display": "rechts",
+                    "system": ""
+                  },
+                  {
+                    "code": "B",
+                    "display": "beidseits",
+                    "system": ""
+                  },
+                  {
+                    "code": "M",
+                    "display": "mittig",
+                    "system": ""
+                  },
+                  {
+                    "code": "U",
+                    "display": "unbekannt",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Strahlentherapie Beginn",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:77:1",
+              "display": "Strahlentherapie Beginn",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Strahlentherapie Ende",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:78:1",
+              "display": "Strahlentherapie Ende",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Strahlentherapie Gesamtdosis",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:80:1",
+              "display": "Strahlentherapie Gesamtdosis",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Strahlentherapie Applikationsart",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:79:1",
+              "display": "Strahlentherapie Applikationsart",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "P",
+                    "display": "perkutan (Teletherapie)",
+                    "system": ""
+                  },
+                  {
+                    "code": "K",
+                    "display": "endokavitäre Kontakttherapie (Brachytherapie)",
+                    "system": ""
+                  },
+                  {
+                    "code": "I",
+                    "display": "interstitielle Kontakttherapie (Brachytherapie",
+                    "system": ""
+                  },
+                  {
+                    "code": "M",
+                    "display": "metabolische Therapie (Radionuklide)",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Strahlentherapie Ende Grund",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:82:1",
+              "display": "Strahlentherapie Ende Grund",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "A",
+                    "display": "Abbruch wegen Nebenwirkungen",
+                    "system": ""
+                  },
+                  {
+                    "code": "E",
+                    "display": "Reguläres Ende",
+                    "system": ""
+                  },
+                  {
+                    "code": "V",
+                    "display": "Patient verweigert weitere Therapie",
+                    "system": ""
+                  },
+                  {
+                    "code": "P",
+                    "display": "Abbruch wegen Progress",
+                    "system": ""
+                  },
+                  {
+                    "code": "U",
+                    "display": "unbekannt",
+                    "system": ""
+                  },
+                  {
+                    "code": "S",
+                    "display": "Abbruch aus sonstigen Gründen",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Strahlentherapie Einzeldosis",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:81:1",
+              "display": "Strahlentherapie Einzeldosis",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "display": "Systemische Therapie",
+        "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+        "leaf": false,
+        "selectable": false,
+        "termCode": {
+          "code": "urn:adt:dataelementgroup:12:1",
+          "display": "Systemische Therapie",
+          "system": "num.codex"
+        },
+        "timeRestrictionAllowed": false,
+        "valueDefinitions": [],
+        "selected": false,
+        "entity": false,
+        "children": [
+          {
+            "display": "Intention der systemischen Therapie",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:86:1",
+              "display": "Intention der systemischen Therapie",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "K",
+                    "display": "kurativ",
+                    "system": ""
+                  },
+                  {
+                    "code": "P",
+                    "display": "palliativ",
+                    "system": ""
+                  },
+                  {
+                    "code": "S",
+                    "display": "sonstiges",
+                    "system": ""
+                  },
+                  {
+                    "code": "X",
+                    "display": "keine Angabe",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Systemische Therapie Stellung zu operativer Therapie",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:87:1",
+              "display": "Systemische Therapie Stellung zu operativer Therapie",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "O",
+                    "display": "ohne Bezug zu einer operativen Therapie",
+                    "system": ""
+                  },
+                  {
+                    "code": "A",
+                    "display": "adjuvant",
+                    "system": ""
+                  },
+                  {
+                    "code": "N",
+                    "display": "neoadjuvant",
+                    "system": ""
+                  },
+                  {
+                    "code": "I",
+                    "display": "intraoperativ",
+                    "system": ""
+                  },
+                  {
+                    "code": "S",
+                    "display": "sonstiges",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Art der systemischen oder abwartenden Therapie",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:88:1",
+              "display": "Art der systemischen oder abwartenden Therapie",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "CH",
+                    "display": "Chemotherapie",
+                    "system": ""
+                  },
+                  {
+                    "code": "HO",
+                    "display": "Hormontherapie",
+                    "system": ""
+                  },
+                  {
+                    "code": "IM",
+                    "display": "Immun- und Antikörpertherapie",
+                    "system": ""
+                  },
+                  {
+                    "code": "KM",
+                    "display": "Knochenmarktransplantation",
+                    "system": ""
+                  },
+                  {
+                    "code": "WS",
+                    "display": "Wait and see",
+                    "system": ""
+                  },
+                  {
+                    "code": "AS",
+                    "display": "Active Surveillance",
+                    "system": ""
+                  },
+                  {
+                    "code": "ZS",
+                    "display": "Zielgerichtete Substanzen",
+                    "system": ""
+                  },
+                  {
+                    "code": "SO",
+                    "display": "Sonstiges",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Systemische Therapie Protokoll",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:89:1",
+              "display": "Systemische Therapie Protokoll",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Systemische Therapie Beginn",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:90:1",
+              "display": "Systemische Therapie Beginn",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Systemische Therapie Substanzen",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:91:1",
+              "display": "Systemische Therapie Substanzen",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Systemische Therapie Ende",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:93:1",
+              "display": "Systemische Therapie Ende",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Systemische Therapie Ende Grund",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:92:1",
+              "display": "Systemische Therapie Ende Grund",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "A",
+                    "display": "Abbruch wegen Nebenwirkungen",
+                    "system": ""
+                  },
+                  {
+                    "code": "E",
+                    "display": "reguläres Ende",
+                    "system": ""
+                  },
+                  {
+                    "code": "V",
+                    "display": "Patient verweigert weitere Therapie",
+                    "system": ""
+                  },
+                  {
+                    "code": "R",
+                    "display": "reguläres Ende mit Dosisreduktion",
+                    "system": ""
+                  },
+                  {
+                    "code": "P",
+                    "display": "Abbruch wegen Progress",
+                    "system": ""
+                  },
+                  {
+                    "code": "U",
+                    "display": "unbekannt",
+                    "system": ""
+                  },
+                  {
+                    "code": "S",
+                    "display": "Abbruch aus sonstigen Gründen",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "display": "Systemische Therapie Nebenwirkungen",
+        "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+        "leaf": false,
+        "selectable": false,
+        "termCode": {
+          "code": "urn:adt:dataelementgroup:13:1",
+          "display": "Systemische Therapie Nebenwirkungen",
+          "system": "num.codex"
+        },
+        "timeRestrictionAllowed": false,
+        "valueDefinitions": [],
+        "selected": false,
+        "entity": false,
+        "children": [
+          {
+            "display": "Systemische Therapie Nebenwirkungen nach CTC Grad",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:110:2",
+              "display": "Systemische Therapie Nebenwirkungen nach CTC Grad",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "K",
+                    "display": "keine oder höchstens Grad 2",
+                    "system": ""
+                  },
+                  {
+                    "code": "3",
+                    "display": "stark/ausgeprägt",
+                    "system": ""
+                  },
+                  {
+                    "code": "4",
+                    "display": "lebensbedrohlich",
+                    "system": ""
+                  },
+                  {
+                    "code": "5",
+                    "display": "tödlich",
+                    "system": ""
+                  },
+                  {
+                    "code": "U",
+                    "display": "unbekannt",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Systemische Therapie Nebenwirkungen nach CTC Version",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:95:1",
+              "display": "Systemische Therapie Nebenwirkungen nach CTC Version",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Systemische Therapie Nebenwirkungen nach CTC Art",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:94:1",
+              "display": "Systemische Therapie Nebenwirkungen nach CTC Art",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "display": "Strahlentherapie Nebenwirkungen",
+        "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+        "leaf": false,
+        "selectable": false,
+        "termCode": {
+          "code": "urn:adt:dataelementgroup:11:2",
+          "display": "Strahlentherapie Nebenwirkungen",
+          "system": "num.codex"
+        },
+        "timeRestrictionAllowed": false,
+        "valueDefinitions": [],
+        "selected": false,
+        "entity": false,
+        "children": [
+          {
+            "display": "Strahlentherapie Nebenwirkungen nach CTC Art",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:84:1",
+              "display": "Strahlentherapie Nebenwirkungen nach CTC Art",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Strahlentherapie Nebenwirkungen nach CTC Grad",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:83:3",
+              "display": "Strahlentherapie Nebenwirkungen nach CTC Grad",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "K",
+                    "display": "keine oder höchstens Grad 2",
+                    "system": ""
+                  },
+                  {
+                    "code": "3",
+                    "display": "stark/ausgeprägt",
+                    "system": ""
+                  },
+                  {
+                    "code": "4",
+                    "display": "lebensbedrohlich",
+                    "system": ""
+                  },
+                  {
+                    "code": "5",
+                    "display": "tödlich",
+                    "system": ""
+                  },
+                  {
+                    "code": "U",
+                    "display": "unbekannt",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Strahlentherapie Nebenwirkungen nach CTC Version",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:85:1",
+              "display": "Strahlentherapie Nebenwirkungen nach CTC Version",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "display": "Verlauf",
+        "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+        "leaf": false,
+        "selectable": false,
+        "termCode": {
+          "code": "urn:adt:dataelementgroup:14:1",
+          "display": "Verlauf",
+          "system": "num.codex"
+        },
+        "timeRestrictionAllowed": false,
+        "valueDefinitions": [],
+        "selected": false,
+        "entity": false,
+        "children": [
+          {
+            "display": "Untersuchungsdatum Verlauf",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:96:1",
+              "display": "Untersuchungsdatum Verlauf",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Gesamtbeurteilung des Tumorstatus",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:97:1",
+              "display": "Gesamtbeurteilung des Tumorstatus",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "V",
+                    "display": "Vollremission (complete remission, CR)",
+                    "system": ""
+                  },
+                  {
+                    "code": "T",
+                    "display": "Teilremission / mindestens 50% Rückgang des Tumors (partial remission, PR)",
+                    "system": ""
+                  },
+                  {
+                    "code": "K",
+                    "display": "Keine Änderung (no change, NC), stable disease",
+                    "system": ""
+                  },
+                  {
+                    "code": "P",
+                    "display": "Progression",
+                    "system": ""
+                  },
+                  {
+                    "code": "D",
+                    "display": "Divergentes Geschehen",
+                    "system": ""
+                  },
+                  {
+                    "code": "B",
+                    "display": "Klinische Besserung des Zustandes, Kriterien für Teilremission jedoch nicht erfüllt (minimal response, MR)",
+                    "system": ""
+                  },
+                  {
+                    "code": "R",
+                    "display": "Vollremission mit residualen Auffälligkeiten (CRr)",
+                    "system": ""
+                  },
+                  {
+                    "code": "U",
+                    "display": "Beurteilung unmöglich",
+                    "system": ""
+                  },
+                  {
+                    "code": "X",
+                    "display": "Fehlende Angabe",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Tumorstatus Primärtumor",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:98:1",
+              "display": "Tumorstatus Primärtumor",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "K",
+                    "display": "Kein Tumor nachweisbar",
+                    "system": ""
+                  },
+                  {
+                    "code": "T",
+                    "display": "Tumorreste (Residualtumor)",
+                    "system": ""
+                  },
+                  {
+                    "code": "P",
+                    "display": "Tumorreste Residualtumor Progress",
+                    "system": ""
+                  },
+                  {
+                    "code": "N",
+                    "display": "Tumorreste Residualtumor No Change",
+                    "system": ""
+                  },
+                  {
+                    "code": "R",
+                    "display": "Lokalrezidiv",
+                    "system": ""
+                  },
+                  {
+                    "code": "F",
+                    "display": "Fraglicher Befund",
+                    "system": ""
+                  },
+                  {
+                    "code": "U",
+                    "display": "Unbekannt",
+                    "system": ""
+                  },
+                  {
+                    "code": "X",
+                    "display": "Fehlende Angabe",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Tumorstatus Lymphknoten",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:99:1",
+              "display": "Tumorstatus Lymphknoten",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "K",
+                    "display": "Kein Lymphknotenbefall nachweisbar",
+                    "system": ""
+                  },
+                  {
+                    "code": "R",
+                    "display": "Neu aufgetretenes Lymphknotenrezidiv",
+                    "system": ""
+                  },
+                  {
+                    "code": "T",
+                    "display": "bekannter Lymphknotenbefall Residuen",
+                    "system": ""
+                  },
+                  {
+                    "code": "P",
+                    "display": "bekannter Lymphknotenbefall Progress",
+                    "system": ""
+                  },
+                  {
+                    "code": "N",
+                    "display": "bekannter Lymphknotenbefall No Change",
+                    "system": ""
+                  },
+                  {
+                    "code": "F",
+                    "display": "Fraglicher Befund",
+                    "system": ""
+                  },
+                  {
+                    "code": "U",
+                    "display": "Unbekannt",
+                    "system": ""
+                  },
+                  {
+                    "code": "X",
+                    "display": "Fehlende Angabe",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Tumorstatus Fernmetastasen",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:100:1",
+              "display": "Tumorstatus Fernmetastasen",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "K",
+                    "display": "Keine Fernmetastasen nachweisbar",
+                    "system": ""
+                  },
+                  {
+                    "code": "M",
+                    "display": "Verbliebene Fernmetastase(n)",
+                    "system": ""
+                  },
+                  {
+                    "code": "R",
+                    "display": "Neu aufgetretene Fernmetastase(n) bzw. Metastasenrezidiv",
+                    "system": ""
+                  },
+                  {
+                    "code": "T",
+                    "display": "Fernmetastasenl Residuen",
+                    "system": ""
+                  },
+                  {
+                    "code": "P",
+                    "display": "Fernmetastasen Progress",
+                    "system": ""
+                  },
+                  {
+                    "code": "N",
+                    "display": "Fernmetastasen No Change",
+                    "system": ""
+                  },
+                  {
+                    "code": "F",
+                    "display": "Fraglicher Befund",
+                    "system": ""
+                  },
+                  {
+                    "code": "U",
+                    "display": "Unbekannt",
+                    "system": ""
+                  },
+                  {
+                    "code": "X",
+                    "display": "Fehlende Angabe",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "display": "Tumorkonferenz",
+        "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+        "leaf": false,
+        "selectable": false,
+        "termCode": {
+          "code": "urn:adt:dataelementgroup:15:1",
+          "display": "Tumorkonferenz",
+          "system": "num.codex"
+        },
+        "timeRestrictionAllowed": false,
+        "valueDefinitions": [],
+        "selected": false,
+        "entity": false,
+        "children": [
+          {
+            "display": "Tumorkonferenz Datum",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:101:1",
+              "display": "Tumorkonferenz Datum",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Tumorkonferenz Typ",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:102:1",
+              "display": "Tumorkonferenz Typ",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "praeth",
+                    "display": "prätherapeutisch",
+                    "system": ""
+                  },
+                  {
+                    "code": "postop",
+                    "display": "postoperativ",
+                    "system": ""
+                  },
+                  {
+                    "code": "postth",
+                    "display": "posttherapeutisch",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "display": "Tod",
+        "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+        "leaf": false,
+        "selectable": false,
+        "termCode": {
+          "code": "urn:adt:dataelementgroup:16:1",
+          "display": "Tod",
+          "system": "num.codex"
+        },
+        "timeRestrictionAllowed": false,
+        "valueDefinitions": [],
+        "selected": false,
+        "entity": false,
+        "children": [
+          {
+            "display": "Sterbedatum",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:103:1",
+              "display": "Sterbedatum",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Tod tumorbedingt",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:104:1",
+              "display": "Tod tumorbedingt",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "j",
+                    "display": "Ja",
+                    "system": ""
+                  },
+                  {
+                    "code": "N",
+                    "display": "Nein",
+                    "system": ""
+                  },
+                  {
+                    "code": "U",
+                    "display": "unbekannt",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Todesursachen",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:105:1",
+              "display": "Todesursachen",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "display": "Diagnose",
+        "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+        "leaf": false,
+        "selectable": false,
+        "termCode": {
+          "code": "urn:adt:dataelementgroup:3:3",
+          "display": "Diagnose",
+          "system": "num.codex"
+        },
+        "timeRestrictionAllowed": false,
+        "valueDefinitions": [],
+        "selected": false,
+        "entity": false,
+        "children": [
+          {
+            "display": "Primärtumor Tumordiagnose ICD-Version",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:27:1",
+              "display": "Primärtumor Tumordiagnose ICD-Version",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Primärtumor Tumordiagnose Text",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:28:1",
+              "display": "Primärtumor Tumordiagnose Text",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Primärtumor Topographie ICD-O",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:29:1",
+              "display": "Primärtumor Topographie ICD-O",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Primärtumor Topographie ICD-O Version",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:30:1",
+              "display": "Primärtumor Topographie ICD-O Version",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Tumor Diagnosedatum",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:31:2",
+              "display": "Tumor Diagnosedatum",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Tumor Seitenlokalisation",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:33:1",
+              "display": "Tumor Seitenlokalisation",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "L",
+                    "display": "Links",
+                    "system": ""
+                  },
+                  {
+                    "code": "R",
+                    "display": "Rechts",
+                    "system": ""
+                  },
+                  {
+                    "code": "B",
+                    "display": "Beidseitig",
+                    "system": ""
+                  },
+                  {
+                    "code": "M",
+                    "display": "Mittellinie / Mittig",
+                    "system": ""
+                  },
+                  {
+                    "code": "U",
+                    "display": "Unbekannt",
+                    "system": ""
+                  },
+                  {
+                    "code": "T",
+                    "display": "Trifft nicht zu",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Tumor frühere Tumorerkrankungen",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:34:1",
+              "display": "Tumor frühere Tumorerkrankungen",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Tumor Diagnosesicherung",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:32:1",
+              "display": "Tumor Diagnosesicherung",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [
+              {
+                "allowedUnits": [],
+                "precision": 1,
+                "selectableConcepts": [
+                  {
+                    "code": "1",
+                    "display": "Klinisch ohne tumorspezifische Diagnostik",
+                    "system": ""
+                  },
+                  {
+                    "code": "2",
+                    "display": "klinisch",
+                    "system": ""
+                  },
+                  {
+                    "code": "4",
+                    "display": "Spezifische Tumormarker",
+                    "system": ""
+                  },
+                  {
+                    "code": "5",
+                    "display": "zytologisch",
+                    "system": ""
+                  },
+                  {
+                    "code": "6",
+                    "display": "Histologie einer Metastase",
+                    "system": ""
+                  },
+                  {
+                    "code": "7",
+                    "display": "histologisch",
+                    "system": ""
+                  }
+                ],
+                "type": "concept"
+              }
+            ],
+            "selected": false,
+            "entity": false,
+            "children": []
+          },
+          {
+            "display": "Primärtumor Tumordiagnose ICD Code",
+            "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+            "leaf": true,
+            "selectable": true,
+            "termCode": {
+              "code": "urn:adt:dataelement:109:1",
+              "display": "Primärtumor Tumordiagnose ICD Code",
+              "system": "num.codex"
+            },
+            "timeRestrictionAllowed": false,
+            "valueDefinitions": [],
+            "selected": false,
+            "entity": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "display": "Allgemeiner Leistungszustand",
+        "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+        "leaf": true,
+        "selectable": true,
+        "termCode": {
+          "code": "urn:adt:dataelement:67:1",
+          "display": "Allgemeiner Leistungszustand",
+          "system": "num.codex"
+        },
+        "timeRestrictionAllowed": false,
+        "valueDefinitions": [],
+        "selected": false,
+        "entity": false,
+        "children": []
+      },
+      {
+        "display": "Anmerkung",
+        "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+        "leaf": true,
+        "selectable": true,
+        "termCode": {
+          "code": "urn:adt:dataelement:106:1",
+          "display": "Anmerkung",
+          "system": "num.codex"
+        },
+        "timeRestrictionAllowed": false,
+        "valueDefinitions": [],
+        "selected": false,
+        "entity": false,
+        "children": []
+      },
+      {
+        "display": "Operateur",
+        "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+        "leaf": true,
+        "selectable": true,
+        "termCode": {
+          "code": "urn:adt:dataelement:107:1",
+          "display": "Operateur",
+          "system": "num.codex"
+        },
+        "timeRestrictionAllowed": false,
+        "valueDefinitions": [],
+        "selected": false,
+        "entity": false,
+        "children": []
+      },
+      {
+        "display": "Meldebegründung",
+        "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+        "leaf": true,
+        "selectable": true,
+        "termCode": {
+          "code": "urn:adt:dataelement:111:1",
+          "display": "Meldebegründung",
+          "system": "num.codex"
+        },
+        "timeRestrictionAllowed": false,
+        "valueDefinitions": [
+          {
+            "allowedUnits": [],
+            "precision": 1,
+            "selectableConcepts": [
+              {
+                "code": "I",
+                "display": "PatientIn wurde informiert und hat nicht widersprochen",
+                "system": ""
+              },
+              {
+                "code": "A",
+                "display": "Ausnahme, Patientenunterrichtung entfallen wegen möglichen gesundheitlicher Nachteile",
+                "system": ""
+              },
+              {
+                "code": "D",
+                "display": "Meldung von Ärzten ohne unmittelbaren Patientenkontakt",
+                "system": ""
+              },
+              {
+                "code": "W",
+                "display": "Patient hat der personenbezogenen Speicherung widersprochen",
+                "system": ""
+              },
+              {
+                "code": "V",
+                "display": "Verstorben",
+                "system": ""
+              }
+            ],
+            "type": "concept"
+          }
+        ],
+        "selected": false,
+        "entity": false,
+        "children": []
+      }
+    ]
+  }

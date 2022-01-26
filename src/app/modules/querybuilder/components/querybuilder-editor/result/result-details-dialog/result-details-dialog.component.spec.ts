@@ -21,7 +21,7 @@ describe('ResultDetailsDialogComponent', () => {
 
   beforeEach(async () => {
     data = {
-      resultObservable$: of({ totalNumberOfPatients: 0, queryId: '13', resultLines: [] }),
+      resultObservable$: of({ totalNumberOfPatients: 0, queryId: '13', replySites: [] }),
     }
     matDialogRef = {
       close: () => {},

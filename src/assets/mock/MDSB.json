@@ -1,0 +1,203 @@
+  {
+    "display": "MDS-B (Biomaterial-Daten)",
+    "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+    "leaf": false,
+    "selectable": false,
+    "termCode": {
+      "code": "MDS-B",
+      "display": "MDS-B (Biomaterial-Daten)",
+      "system": "dktk"
+    },
+    "timeRestrictionAllowed": false,
+    "valueDefinitions": [],
+    "selected": false,
+    "entity": false,
+    "children": [
+      {
+        "display": "Entnahmedatum",
+        "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+        "leaf": true,
+        "selectable": true,
+        "termCode": {
+          "code": "urn:dktk:dataelement:49:4",
+          "display": "Entnahmedatum",
+          "system": "num.codex"
+        },
+        "timeRestrictionAllowed": false,
+        "valueDefinitions": [
+          {
+            "allowedUnits": [],
+            "precision": 1,
+            "selectableConcepts": [],
+            "type": "date"
+          }
+        ],
+        "selected": false,
+        "entity": false,
+        "children": []
+      },
+      {
+        "display": "Patienten mit Biomaterial",
+        "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+        "leaf": true,
+        "selectable": true,
+        "termCode": {
+          "code": "urn:dktk:dataelement:50:2",
+          "display": "Patienten mit Biomaterial",
+          "system": "num.codex"
+        },
+        "timeRestrictionAllowed": false,
+        "valueDefinitions": [],
+        "selected": false,
+        "entity": false,
+        "children": []
+      },
+      {
+        "display": "Fixierungsart",
+        "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+        "leaf": true,
+        "selectable": true,
+        "termCode": {
+          "code": "urn:dktk:dataelement:90:1",
+          "display": "Fixierungsart",
+          "system": "num.codex"
+        },
+        "timeRestrictionAllowed": false,
+        "valueDefinitions": [
+          {
+            "allowedUnits": [],
+            "precision": 1,
+            "selectableConcepts": [
+              {
+                "code": "Paraffin (FFPE)",
+                "display": "Paraffin (FFPE)",
+                "system": ""
+              },
+              {
+                "code": "Kryo/Frisch (FF)",
+                "display": "Kryo/Frisch (FF)",
+                "system": ""
+              }
+            ],
+            "type": "concept"
+          }
+        ],
+        "selected": false,
+        "entity": false,
+        "children": []
+      },
+      {
+        "display": "Probenart",
+        "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+        "leaf": true,
+        "selectable": true,
+        "termCode": {
+          "code": "urn:dktk:dataelement:97:1",
+          "display": "Probenart",
+          "system": "num.codex"
+        },
+        "timeRestrictionAllowed": false,
+        "valueDefinitions": [
+          {
+            "allowedUnits": [],
+            "precision": 1,
+            "selectableConcepts": [
+              {
+                "code": "Tumorgewebe",
+                "display": "Tumorgewebe",
+                "system": ""
+              },
+              {
+                "code": "Normalgewebe",
+                "display": "Normalgewebe",
+                "system": ""
+              },
+              {
+                "code": "Vollblut",
+                "display": "Vollblut",
+                "system": ""
+              },
+              {
+                "code": "Serum",
+                "display": "Serum",
+                "system": ""
+              },
+              {
+                "code": "Plasma",
+                "display": "Plasma",
+                "system": ""
+              },
+              {
+                "code": "Urin",
+                "display": "Urin",
+                "system": ""
+              },
+              {
+                "code": "Liquor",
+                "display": "Liquor",
+                "system": ""
+              },
+              {
+                "code": "Knochenmark",
+                "display": "Knochenmark",
+                "system": ""
+              },
+              {
+                "code": "DNA",
+                "display": "DNA",
+                "system": ""
+              },
+              {
+                "code": "RNA",
+                "display": "RNA",
+                "system": ""
+              },
+              {
+                "code": "Protein",
+                "display": "Protein",
+                "system": ""
+              }
+            ],
+            "type": "concept"
+          }
+        ],
+        "selected": false,
+        "entity": false,
+        "children": []
+      },
+      {
+        "display": "Probentyp",
+        "id": "2e6146cc-3e34-4bd6-9be2-89ff68f6141b",
+        "leaf": true,
+        "selectable": true,
+        "termCode": {
+          "code": "urn:dktk:dataelement:95:2",
+          "display": "Probentyp",
+          "system": "num.codex"
+        },
+        "timeRestrictionAllowed": false,
+        "valueDefinitions": [
+          {
+            "allowedUnits": [],
+            "precision": 1,
+            "selectableConcepts": [
+              {
+                "code": "Flüssigprobe",
+                "display": "Flüssigprobe",
+                "system": ""
+              },
+              {
+                "code": "Gewebeprobe",
+                "display": "Gewebeprobe",
+                "system": ""
+              }
+            ],
+            "type": "concept"
+          }
+        ],
+        "selected": false,
+        "entity": false,
+        "children": []
+      }
+    ]
+  }
