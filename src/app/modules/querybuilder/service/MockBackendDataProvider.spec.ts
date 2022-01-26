@@ -10,7 +10,7 @@ describe('MockBackendDataProvider', () => {
   const provider = new MockBackendDataProvider(featureService)
 
   it('getCategories', () => {
-    expect(provider.getCategoryEntries().length).toBe(7)
+    expect(provider.getCategoryEntries().length).toBe(6)
   })
 
   it('getTerminologyEntry (amnesis)', () => {

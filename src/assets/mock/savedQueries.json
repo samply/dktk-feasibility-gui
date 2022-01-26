@@ -1,0 +1,1061 @@
+[
+  {
+    "groups": [
+      {
+        "inclusionCriteria": [
+          [
+            {
+              "valueFilters": [],
+              "children": [],
+              "termCode": {
+                "code": "G47.3",
+                "system": "http://fhir.de/CodeSystem/dimdi/icd-10-gm",
+                "display": "Schlafapnoe"
+              },
+              "display": "Schlaf",
+              "timeRestriction": {
+                "tvpe": "EVER",
+                "maxDate": null,
+                "minDate": null
+              }
+            }
+          ]
+        ],
+        "exclusionCriteria": [],
+        "id": 1,
+        "display": "Ausgewählte Merkmale"
+      },
+      {
+        "inclusionCriteria": [],
+        "exclusionCriteria": [],
+        "id": 2,
+        "display": "Ausgewählte Merkmale"
+      }
+    ],
+    "display": ""
+  },
+  {
+    "groups": [
+      {
+        "inclusionCriteria": [
+          [
+            {
+              "valueFilters": [],
+              "children": [],
+              "termCode": {
+                "code": "G47.3",
+                "system": "http://fhir.de/CodeSystem/dimdi/icd-10-gm",
+                "display": "Schlafapnoe"
+              },
+              "display": "Schlafapnoe",
+              "timeRestriction": {
+                "tvpe": "EVER",
+                "maxDate": null,
+                "minDate": null
+              }
+            }
+          ]
+        ],
+        "exclusionCriteria": [],
+        "id": 1,
+        "display": "Ausgewählte Merkmale"
+      },
+      {
+        "inclusionCriteria": [],
+        "exclusionCriteria": [],
+        "id": 2,
+        "display": "Ausgewählte Merkmale"
+      }
+    ],
+    "display": ""
+  },
+  {
+  "groups": [
+    {
+      "inclusionCriteria": [
+        [
+          {
+            "valueFilters": [
+              {
+                "selectedConcepts": [
+                  {
+                    "code": "D43",
+                    "display": "D43",
+                    "system": "http://loinc.org"
+                  }
+                ],
+                "valueDefinition": {
+                  "type": "concept",
+                  "precision": 0,
+                  "selectableConcepts": [
+                    {
+                      "code": "D43",
+                      "display": "D43",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "C71",
+                      "display": "C71",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "C72",
+                      "display": "C72",
+                      "system": "http://loinc.org"
+                    }
+                  ]
+                },
+                "type": "concept"
+              }
+            ],
+            "children": [],
+            "termCode": {
+              "code": "29:2",
+              "system": "http://loinc.org",
+              "display": "Diagnose"
+            },
+            "display": "Diagnose",
+            "timeRestriction": {
+              "tvpe": "EVER",
+              "maxDate": null,
+              "minDate": null
+            }
+          }
+        ],
+        [
+          {
+            "valueFilters": [
+              {
+                "selectedConcepts": [
+                  {
+                    "code": "9383/1",
+                    "display": "9383/1",
+                    "system": "http://loinc.org"
+                  }
+                ],
+                "valueDefinition": {
+                  "type": "concept",
+                  "precision": 0,
+                  "selectableConcepts": [
+                    {
+                      "code": "9383/1",
+                      "display": "9383/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9384/1",
+                      "display": "9384/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9394/1",
+                      "display": "9394/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9421/1",
+                      "display": "9421/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9382/3",
+                      "display": "9382/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9391/3",
+                      "display": "9391/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9400/3",
+                      "display": "9400/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9424/3",
+                      "display": "9424/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9425/3",
+                      "display": "9425/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9450/3",
+                      "display": "9450/3",
+                      "system": "http://loinc.org"
+                    }
+                  ]
+                },
+                "type": "concept"
+              }
+            ],
+            "children": [],
+            "termCode": {
+              "code": "7:2",
+              "system": "http://loinc.org",
+              "display": "Morphologie"
+            },
+            "display": "Morphologie",
+            "timeRestriction": {
+              "tvpe": "EVER",
+              "maxDate": null,
+              "minDate": null
+            }
+          },
+          {
+            "valueFilters": [
+              {
+                "selectedConcepts": [
+                  {
+                    "code": "9384/1",
+                    "display": "9384/1",
+                    "system": "http://loinc.org"
+                  }
+                ],
+                "valueDefinition": {
+                  "type": "concept",
+                  "precision": 0,
+                  "selectableConcepts": [
+                    {
+                      "code": "9383/1",
+                      "display": "9383/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9384/1",
+                      "display": "9384/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9394/1",
+                      "display": "9394/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9421/1",
+                      "display": "9421/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9382/3",
+                      "display": "9382/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9391/3",
+                      "display": "9391/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9400/3",
+                      "display": "9400/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9424/3",
+                      "display": "9424/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9425/3",
+                      "display": "9425/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9450/3",
+                      "display": "9450/3",
+                      "system": "http://loinc.org"
+                    }
+                  ]
+                },
+                "type": "concept"
+              }
+            ],
+            "children": [],
+            "termCode": {
+              "code": "7:2",
+              "system": "http://loinc.org",
+              "display": "Morphologie"
+            },
+            "display": "Morphologie",
+            "timeRestriction": {
+              "tvpe": "EVER",
+              "maxDate": null,
+              "minDate": null
+            }
+          },
+          {
+            "valueFilters": [
+              {
+                "selectedConcepts": [
+                  {
+                    "code": "9394/1",
+                    "display": "9394/1",
+                    "system": "http://loinc.org"
+                  }
+                ],
+                "valueDefinition": {
+                  "type": "concept",
+                  "precision": 0,
+                  "selectableConcepts": [
+                    {
+                      "code": "9383/1",
+                      "display": "9383/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9384/1",
+                      "display": "9384/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9394/1",
+                      "display": "9394/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9421/1",
+                      "display": "9421/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9382/3",
+                      "display": "9382/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9391/3",
+                      "display": "9391/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9400/3",
+                      "display": "9400/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9424/3",
+                      "display": "9424/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9425/3",
+                      "display": "9425/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9450/3",
+                      "display": "9450/3",
+                      "system": "http://loinc.org"
+                    }
+                  ]
+                },
+                "type": "concept"
+              }
+            ],
+            "children": [],
+            "termCode": {
+              "code": "7:2",
+              "system": "http://loinc.org",
+              "display": "Morphologie"
+            },
+            "display": "Morphologie",
+            "timeRestriction": {
+              "tvpe": "EVER",
+              "maxDate": null,
+              "minDate": null
+            }
+          },
+          {
+            "valueFilters": [
+              {
+                "selectedConcepts": [
+                  {
+                    "code": "9421/1",
+                    "display": "9421/1",
+                    "system": "http://loinc.org"
+                  }
+                ],
+                "valueDefinition": {
+                  "type": "concept",
+                  "precision": 0,
+                  "selectableConcepts": [
+                    {
+                      "code": "9383/1",
+                      "display": "9383/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9384/1",
+                      "display": "9384/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9394/1",
+                      "display": "9394/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9421/1",
+                      "display": "9421/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9382/3",
+                      "display": "9382/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9391/3",
+                      "display": "9391/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9400/3",
+                      "display": "9400/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9424/3",
+                      "display": "9424/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9425/3",
+                      "display": "9425/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9450/3",
+                      "display": "9450/3",
+                      "system": "http://loinc.org"
+                    }
+                  ]
+                },
+                "type": "concept"
+              }
+            ],
+            "children": [],
+            "termCode": {
+              "code": "7:2",
+              "system": "http://loinc.org",
+              "display": "Morphologie"
+            },
+            "display": "Morphologie",
+            "timeRestriction": {
+              "tvpe": "EVER",
+              "maxDate": null,
+              "minDate": null
+            }
+          }
+        ]
+      ],
+      "exclusionCriteria": [],
+      "id": 1,
+      "display": "Ausgewählte Merkmale"
+    },
+    {
+      "inclusionCriteria": [
+        [
+          {
+            "valueFilters": [
+              {
+                "selectedConcepts": [
+                  {
+                    "code": "C71",
+                    "display": "C71",
+                    "system": "http://loinc.org"
+                  }
+                ],
+                "valueDefinition": {
+                  "type": "concept",
+                  "precision": 0,
+                  "selectableConcepts": [
+                    {
+                      "code": "D43",
+                      "display": "D43",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "C71",
+                      "display": "C71",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "C72",
+                      "display": "C72",
+                      "system": "http://loinc.org"
+                    }
+                  ]
+                },
+                "type": "concept"
+              }
+            ],
+            "children": [],
+            "termCode": {
+              "code": "29:2",
+              "system": "http://loinc.org",
+              "display": "Diagnose"
+            },
+            "display": "Diagnose",
+            "timeRestriction": {
+              "tvpe": "EVER",
+              "maxDate": null,
+              "minDate": null
+            }
+          },
+          {
+            "valueFilters": [
+              {
+                "selectedConcepts": [
+                  {
+                    "code": "C72",
+                    "display": "C72",
+                    "system": "http://loinc.org"
+                  }
+                ],
+                "valueDefinition": {
+                  "type": "concept",
+                  "precision": 0,
+                  "selectableConcepts": [
+                    {
+                      "code": "D43",
+                      "display": "D43",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "C71",
+                      "display": "C71",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "C72",
+                      "display": "C72",
+                      "system": "http://loinc.org"
+                    }
+                  ]
+                },
+                "type": "concept"
+              }
+            ],
+            "children": [],
+            "termCode": {
+              "code": "29:2",
+              "system": "http://loinc.org",
+              "display": "Diagnose"
+            },
+            "display": "Diagnose",
+            "timeRestriction": {
+              "tvpe": "EVER",
+              "maxDate": null,
+              "minDate": null
+            }
+          }
+        ],
+        [
+          {
+            "valueFilters": [
+              {
+                "selectedConcepts": [
+                  {
+                    "code": "9382/3",
+                    "display": "9382/3",
+                    "system": "http://loinc.org"
+                  }
+                ],
+                "valueDefinition": {
+                  "type": "concept",
+                  "precision": 0,
+                  "selectableConcepts": [
+                    {
+                      "code": "9383/1",
+                      "display": "9383/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9384/1",
+                      "display": "9384/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9394/1",
+                      "display": "9394/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9421/1",
+                      "display": "9421/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9382/3",
+                      "display": "9382/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9391/3",
+                      "display": "9391/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9400/3",
+                      "display": "9400/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9424/3",
+                      "display": "9424/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9425/3",
+                      "display": "9425/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9450/3",
+                      "display": "9450/3",
+                      "system": "http://loinc.org"
+                    }
+                  ]
+                },
+                "type": "concept"
+              }
+            ],
+            "children": [],
+            "termCode": {
+              "code": "7:2",
+              "system": "http://loinc.org",
+              "display": "Morphologie"
+            },
+            "display": "Morphologie",
+            "timeRestriction": {
+              "tvpe": "EVER",
+              "maxDate": null,
+              "minDate": null
+            }
+          },
+          {
+            "valueFilters": [
+              {
+                "selectedConcepts": [
+                  {
+                    "code": "9391/3",
+                    "display": "9391/3",
+                    "system": "http://loinc.org"
+                  }
+                ],
+                "valueDefinition": {
+                  "type": "concept",
+                  "precision": 0,
+                  "selectableConcepts": [
+                    {
+                      "code": "9383/1",
+                      "display": "9383/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9384/1",
+                      "display": "9384/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9394/1",
+                      "display": "9394/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9421/1",
+                      "display": "9421/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9382/3",
+                      "display": "9382/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9391/3",
+                      "display": "9391/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9400/3",
+                      "display": "9400/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9424/3",
+                      "display": "9424/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9425/3",
+                      "display": "9425/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9450/3",
+                      "display": "9450/3",
+                      "system": "http://loinc.org"
+                    }
+                  ]
+                },
+                "type": "concept"
+              }
+            ],
+            "children": [],
+            "termCode": {
+              "code": "7:2",
+              "system": "http://loinc.org",
+              "display": "Morphologie"
+            },
+            "display": "Morphologie",
+            "timeRestriction": {
+              "tvpe": "EVER",
+              "maxDate": null,
+              "minDate": null
+            }
+          },
+          {
+            "valueFilters": [
+              {
+                "selectedConcepts": [
+                  {
+                    "code": "9400/3",
+                    "display": "9400/3",
+                    "system": "http://loinc.org"
+                  }
+                ],
+                "valueDefinition": {
+                  "type": "concept",
+                  "precision": 0,
+                  "selectableConcepts": [
+                    {
+                      "code": "9383/1",
+                      "display": "9383/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9384/1",
+                      "display": "9384/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9394/1",
+                      "display": "9394/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9421/1",
+                      "display": "9421/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9382/3",
+                      "display": "9382/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9391/3",
+                      "display": "9391/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9400/3",
+                      "display": "9400/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9424/3",
+                      "display": "9424/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9425/3",
+                      "display": "9425/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9450/3",
+                      "display": "9450/3",
+                      "system": "http://loinc.org"
+                    }
+                  ]
+                },
+                "type": "concept"
+              }
+            ],
+            "children": [],
+            "termCode": {
+              "code": "7:2",
+              "system": "http://loinc.org",
+              "display": "Morphologie"
+            },
+            "display": "Morphologie",
+            "timeRestriction": {
+              "tvpe": "EVER",
+              "maxDate": null,
+              "minDate": null
+            }
+          },
+          {
+            "valueFilters": [
+              {
+                "selectedConcepts": [
+                  {
+                    "code": "9424/3",
+                    "display": "9424/3",
+                    "system": "http://loinc.org"
+                  }
+                ],
+                "valueDefinition": {
+                  "type": "concept",
+                  "precision": 0,
+                  "selectableConcepts": [
+                    {
+                      "code": "9383/1",
+                      "display": "9383/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9384/1",
+                      "display": "9384/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9394/1",
+                      "display": "9394/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9421/1",
+                      "display": "9421/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9382/3",
+                      "display": "9382/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9391/3",
+                      "display": "9391/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9400/3",
+                      "display": "9400/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9424/3",
+                      "display": "9424/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9425/3",
+                      "display": "9425/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9450/3",
+                      "display": "9450/3",
+                      "system": "http://loinc.org"
+                    }
+                  ]
+                },
+                "type": "concept"
+              }
+            ],
+            "children": [],
+            "termCode": {
+              "code": "7:2",
+              "system": "http://loinc.org",
+              "display": "Morphologie"
+            },
+            "display": "Morphologie",
+            "timeRestriction": {
+              "tvpe": "EVER",
+              "maxDate": null,
+              "minDate": null
+            }
+          },
+          {
+            "valueFilters": [
+              {
+                "selectedConcepts": [
+                  {
+                    "code": "9425/3",
+                    "display": "9425/3",
+                    "system": "http://loinc.org"
+                  }
+                ],
+                "valueDefinition": {
+                  "type": "concept",
+                  "precision": 0,
+                  "selectableConcepts": [
+                    {
+                      "code": "9383/1",
+                      "display": "9383/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9384/1",
+                      "display": "9384/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9394/1",
+                      "display": "9394/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9421/1",
+                      "display": "9421/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9382/3",
+                      "display": "9382/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9391/3",
+                      "display": "9391/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9400/3",
+                      "display": "9400/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9424/3",
+                      "display": "9424/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9425/3",
+                      "display": "9425/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9450/3",
+                      "display": "9450/3",
+                      "system": "http://loinc.org"
+                    }
+                  ]
+                },
+                "type": "concept"
+              }
+            ],
+            "children": [],
+            "termCode": {
+              "code": "7:2",
+              "system": "http://loinc.org",
+              "display": "Morphologie"
+            },
+            "display": "Morphologie",
+            "timeRestriction": {
+              "tvpe": "EVER",
+              "maxDate": null,
+              "minDate": null
+            }
+          },
+          {
+            "valueFilters": [
+              {
+                "selectedConcepts": [
+                  {
+                    "code": "9450/3",
+                    "display": "9450/3",
+                    "system": "http://loinc.org"
+                  }
+                ],
+                "valueDefinition": {
+                  "type": "concept",
+                  "precision": 0,
+                  "selectableConcepts": [
+                    {
+                      "code": "9383/1",
+                      "display": "9383/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9384/1",
+                      "display": "9384/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9394/1",
+                      "display": "9394/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9421/1",
+                      "display": "9421/1",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9382/3",
+                      "display": "9382/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9391/3",
+                      "display": "9391/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9400/3",
+                      "display": "9400/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9424/3",
+                      "display": "9424/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9425/3",
+                      "display": "9425/3",
+                      "system": "http://loinc.org"
+                    },
+                    {
+                      "code": "9450/3",
+                      "display": "9450/3",
+                      "system": "http://loinc.org"
+                    }
+                  ]
+                },
+                "type": "concept"
+              }
+            ],
+            "children": [],
+            "termCode": {
+              "code": "7:2",
+              "system": "http://loinc.org",
+              "display": "Morphologie"
+            },
+            "display": "Morphologie",
+            "timeRestriction": {
+              "tvpe": "EVER",
+              "maxDate": null,
+              "minDate": null
+            }
+          }
+        ]
+      ],
+      "exclusionCriteria": [],
+      "id": 2,
+      "display": "Ausgewählte Merkmale"
+    }
+  ],
+  "display": ""
+  }
+
+]

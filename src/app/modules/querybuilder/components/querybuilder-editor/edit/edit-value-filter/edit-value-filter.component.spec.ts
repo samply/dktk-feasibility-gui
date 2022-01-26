@@ -16,6 +16,7 @@ import { EditValueFilterConceptLineComponent } from '../edit-value-filter-concep
 import { TerminologyCode } from '../../../../model/api/terminology/terminology'
 import { ObjectHelper } from '../../../../controller/ObjectHelper'
 import { ValueType } from '../../../../model/api/terminology/valuedefinition'
+import { EditTimeRestrictionComponent } from '../edit-time-restriction/edit-time-restriction.component'
 
 describe('EditValueDefinitionComponent', () => {
   let component: EditValueFilterComponent
@@ -41,6 +42,7 @@ describe('EditValueDefinitionComponent', () => {
         EditValueFilterComponent,
         EditValueFilterConceptLineComponent,
         MatInputNumberDirective,
+        EditTimeRestrictionComponent,
       ],
       imports: [
         MaterialModule,
@@ -61,7 +63,6 @@ describe('EditValueDefinitionComponent', () => {
   describe('create component', () => {
     it('should create without filter', () => {
       component.filter = undefined
-
       fixture.detectChanges()
       expect(component).toBeTruthy()
     })

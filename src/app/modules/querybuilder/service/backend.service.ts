@@ -24,7 +24,7 @@ export class BackendService {
   private static PATH_ROOT_ENTRIES = 'terminology/root-entries'
   private static PATH_TERMINOLOGY_SUBTREE = 'terminology/entries'
   private static PATH_SEARCH = 'terminology/selectable-entries'
-  private static PATH_RUN_QUERY = 'query-handler/run-query'
+  private static PATH_RUN_QUERY = 'queries'
 
   public static MOCK_RESULT_URL = 'http://localhost:9999/result-of-query/12345'
 
@@ -83,7 +83,7 @@ export class BackendService {
 
       const test = { query: JSON.stringify(queryV2), target: [], queryName: 'foo' }
       return this.http.post<any>(
-        'http://localhost:8097/share_broker_rest_war/rest/searchbroker/structured-query/queries',
+        this.createUrl(BackendService.PATH_RUN_QUERY),
         JSON.stringify(test),
         { headers }
       )
@@ -107,10 +107,7 @@ export class BackendService {
     }
     const headers = new HttpHeaders().set('Authorization', 'Basic ' + btoa('test123:test123'))
 
-    return this.http.get<QueryResultSB>(
-      'http://localhost:8097/share_broker_rest_war/rest/searchbroker/structured-query/' + resultUrl,
-      { headers }
-    )
+    return this.http.get<QueryResultSB>(this.createUrl('') + resultUrl, { headers })
   }
 
   createUrl(pathToResource: string, paramString?: string): string {

@@ -6,6 +6,7 @@ import { Comparator, ValueFilter } from '../../../../model/api/query/valueFilter
 import { FontAwesomeTestingModule } from '@fortawesome/angular-fontawesome/testing'
 import { HttpClientTestingModule } from '@angular/common/http/testing'
 import { FeatureService } from '../../../../../../service/feature.service'
+import { DisplayTimeRestrictionComponent } from '../display-time-restriction/display-time-restriction.component'
 
 describe('DisplayValueFilterComponent', () => {
   let component: DisplayValueFilterComponent
@@ -18,7 +19,7 @@ describe('DisplayValueFilterComponent', () => {
   } as FeatureService
 
   const testBedConfig = {
-    declarations: [DisplayValueFilterComponent],
+    declarations: [DisplayValueFilterComponent, DisplayTimeRestrictionComponent],
     imports: [TranslateModule.forRoot(), FontAwesomeTestingModule, HttpClientTestingModule],
     providers: [
       {

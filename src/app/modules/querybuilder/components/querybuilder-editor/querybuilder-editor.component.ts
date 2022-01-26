@@ -132,13 +132,6 @@ export class QuerybuilderEditorComponent implements OnInit, OnDestroy, AfterView
     this.dialog.open(SaveDialogComponent, dialogConfig)
   }
 
-  doSave(): void {
-    const dialogConfig = new MatDialogConfig()
-
-    dialogConfig.autoFocus = true
-    this.dialog.open(SaveDialogComponent, dialogConfig)
-  }
-
   doReset(): void {
     this.query = QueryProviderService.createDefaultQuery()
     this.queryProviderService.store(this.query)

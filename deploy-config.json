@@ -6,7 +6,7 @@
     "baseUrl": "/api"
   },
   "uiBackendApi": {
-    "baseUrl": "http://localhost:8091/api/v1"
+    "baseUrl": "http://localhost:8097/share_broker_rest_war/rest/searchbroker/structured-query/"
   },
   "auth": {
     "baseUrl": "http://localhost:8080",
@@ -15,7 +15,7 @@
   },
   "legal": {
     "version": "0.9.0",
-    "copyrightOwner": "CODEX Team"
+    "copyrightOwner": "DKTK Team"
   },
   "features": {
     "v2": {

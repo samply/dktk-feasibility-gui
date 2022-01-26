@@ -6,7 +6,7 @@
     "baseUrl": "/api"
   },
   "uiBackendApi": {
-    "baseUrl": "http://localhost:8090/api/v1"
+    "baseUrl": "http://localhost:8097/share_broker_rest_war/rest/searchbroker/structured-query/"
   },
   "auth": {
     "baseUrl": "http://localhost:8080",
@@ -37,7 +37,7 @@
   "mock": {
     "terminology": false,
     "query": false,
-    "result": true
+    "result": false
   },
   "stylesheet": "codexTheme",
   "fhirport": "8082",
