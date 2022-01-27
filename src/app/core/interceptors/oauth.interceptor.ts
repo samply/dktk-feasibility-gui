@@ -12,7 +12,12 @@ import { catchError } from 'rxjs/operators'
 
 @Injectable()
 export class OAuthInterceptor implements HttpInterceptor {
-  excludedUrls = ['assets', '/assets', 'http://localhost:8097/share_broker_rest_war']
+  excludedUrls = [
+    'assets',
+    '/assets',
+    'http://localhost:8097/share_broker_rest_war',
+    'http://localhost:8092/searchbroker',
+  ]
   excludedUrlsRegEx = this.excludedUrls.map((url) => new RegExp('^' + url, 'i'))
 
   constructor(private oauthService: OAuthService, private authStorage: OAuthStorage) {}
