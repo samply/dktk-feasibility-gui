@@ -8,6 +8,9 @@ export interface IAppConfig {
   uiBackendApi: {
     baseUrl: string
   }
+  uiSearchbrokerApi: {
+    baseUrl: string
+  }
   auth: {
     baseUrl: string
     realm: string

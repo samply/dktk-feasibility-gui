@@ -8,6 +8,9 @@
   "uiBackendApi": {
     "baseUrl": "#{uiBackendApi_baseUrl}"
   },
+  "uiSearchbrokerApi": {
+    "baseUrl": "#{uiSearchbrokerApi_baseUrl}"
+  },
   "auth": {
     "baseUrl": "#{auth_baseUrl}",
     "realm": "#{auth_realm}",

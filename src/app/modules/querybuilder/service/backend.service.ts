@@ -36,7 +36,9 @@ export class BackendService {
       return of(this.mockBackendDataProvider.getCategoryEntries())
     }
 
-    return this.http.get<Array<CategoryEntry>>(this.createUrl(BackendService.PATH_ROOT_ENTRIES))
+    return this.http.get<Array<CategoryEntry>>(
+      this.createUrl('backend', BackendService.PATH_ROOT_ENTRIES)
+    )
   }
 
   public getTerminolgyTree(id: string): Observable<TerminologyEntry> {
@@ -45,7 +47,7 @@ export class BackendService {
     }
 
     return this.http.get<TerminologyEntry>(
-      this.createUrl(BackendService.PATH_TERMINOLOGY_SUBTREE + '/' + id)
+      this.createUrl('backend', BackendService.PATH_TERMINOLOGY_SUBTREE + '/' + id)
     )
   }
 
@@ -58,7 +60,7 @@ export class BackendService {
     }
 
     const queryParam = 'query=' + search.toUpperCase() + (catId ? '&categoryId=' + catId : '')
-    const url = this.createUrl(BackendService.PATH_SEARCH, queryParam)
+    const url = this.createUrl('backend', BackendService.PATH_SEARCH, queryParam)
 
     return this.http.get<Array<TerminologyEntry>>(url)
   }
@@ -70,11 +72,14 @@ export class BackendService {
 
     if (this.feature.getQueryVersion() === 'v1') {
       const queryV1 = new ApiTranslator().translateToV1(query)
-      return this.http.post<QueryResponse>(this.createUrl(BackendService.PATH_RUN_QUERY), queryV1)
+      return this.http.post<QueryResponse>(
+        this.createUrl('backend', BackendService.PATH_RUN_QUERY),
+        queryV1
+      )
     }
     if (this.feature.getQueryVersion() === 'v2') {
       const queryV2 = new ApiTranslator().translateToV2(query)
-      // return this.http.post<QueryResponse>(this.createUrl(BackendService.PATH_RUN_QUERY), queryV2)
+      // return this.http.post<QueryResponse>(this.createUrl('backend', BackendService.PATH_RUN_QUERY), queryV2)
 
       const headers = new HttpHeaders()
         .set('Content-Type', 'application/json')
@@ -83,7 +88,7 @@ export class BackendService {
 
       const test = { query: JSON.stringify(queryV2), target: [], queryName: 'foo' }
       return this.http.post<any>(
-        this.createUrl(BackendService.PATH_RUN_QUERY),
+        this.createUrl('searchbroker', BackendService.PATH_RUN_QUERY),
         JSON.stringify(test),
         { headers }
       )
@@ -107,12 +112,17 @@ export class BackendService {
     }
     const headers = new HttpHeaders().set('Authorization', 'Basic ' + btoa('test123:test123'))
 
-    return this.http.get<QueryResultSB>(this.createUrl('') + resultUrl, { headers })
+    return this.http.get<QueryResultSB>(this.createUrl('searchbroker', '') + resultUrl, { headers })
   }
 
-  createUrl(pathToResource: string, paramString?: string): string {
-    let url = this.config.getConfig().uiBackendApi.baseUrl
-
+  createUrl(broker: string, pathToResource: string, paramString?: string): string {
+    let url: string
+    if (broker === 'backend') {
+      url = this.config.getConfig().uiBackendApi.baseUrl
+    }
+    if (broker === 'searchbroker') {
+      url = this.config.getConfig().uiSearchbrokerApi.baseUrl
+    }
     if (!url.endsWith('/')) {
       url += '/'
     }

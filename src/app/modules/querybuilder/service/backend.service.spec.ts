@@ -243,7 +243,7 @@ describe('BackendService', () => {
       .spyOn(appConfigService, 'getConfig')
       .mockReturnValue(BackendServiceSpecUtil.createConfig('http:abc'))
 
-    expect(service.createUrl('pathToResource')).toBe('http:abc/pathToResource')
+    expect(service.createUrl('backend', 'pathToResource')).toBe('http:abc/pathToResource')
   })
 
   it("should include '/' only once and no parameters", () => {
@@ -252,7 +252,7 @@ describe('BackendService', () => {
       .spyOn(appConfigService, 'getConfig')
       .mockReturnValue(BackendServiceSpecUtil.createConfig('http:abc/'))
 
-    expect(service.createUrl('pathToResource')).toBe('http:abc/pathToResource')
+    expect(service.createUrl('backend', 'pathToResource')).toBe('http:abc/pathToResource')
   })
 
   it("should include '/' and parameters", () => {
@@ -261,7 +261,7 @@ describe('BackendService', () => {
       .spyOn(appConfigService, 'getConfig')
       .mockReturnValue(BackendServiceSpecUtil.createConfig('http:abc'))
 
-    expect(service.createUrl('pathToResource', 'id=' + EXAMPLE_ID)).toBe(
+    expect(service.createUrl('backend', 'pathToResource', 'id=' + EXAMPLE_ID)).toBe(
       'http:abc/pathToResource?id=1'
     )
   })
@@ -272,7 +272,7 @@ describe('BackendService', () => {
       .spyOn(appConfigService, 'getConfig')
       .mockReturnValue(BackendServiceSpecUtil.createConfig('http:abc/'))
 
-    expect(service.createUrl('pathToResource', 'id=' + EXAMPLE_ID)).toBe(
+    expect(service.createUrl('backend', 'pathToResource', 'id=' + EXAMPLE_ID)).toBe(
       'http:abc/pathToResource?id=1'
     )
   })
@@ -282,6 +282,9 @@ class BackendServiceSpecUtil {
   static createConfig(backendUrl: string): IAppConfig {
     return {
       uiBackendApi: {
+        baseUrl: backendUrl,
+      },
+      uiSearchbrokerApi: {
         baseUrl: backendUrl,
       },
     } as IAppConfig

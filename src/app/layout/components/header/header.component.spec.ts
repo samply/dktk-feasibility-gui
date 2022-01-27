@@ -41,6 +41,7 @@ describe('HeaderComponent', () => {
         env: null,
         api: null,
         uiBackendApi: null,
+        uiSearchbrokerApi: null,
         features: null,
         stylesheet: 'abide',
         auth: null,

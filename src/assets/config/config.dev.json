@@ -6,6 +6,9 @@
     "baseUrl": "/api"
   },
   "uiBackendApi": {
+    "baseUrl": "http://localhost:8090/api/v1"
+  },
+  "uiSearchbrokerApi": {
     "baseUrl": "http://localhost:8097/share_broker_rest_war/rest/searchbroker/structured-query/"
   },
   "auth": {
