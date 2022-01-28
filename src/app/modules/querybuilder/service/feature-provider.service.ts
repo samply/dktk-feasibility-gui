@@ -49,9 +49,7 @@ export class FeatureProviderService {
     this.renderer.removeClass(document.getElementById('footer-logo'), oldTheme)
     this.renderer.addClass(document.getElementById('footer-logo'), newTheme)
     if (newTheme === 'codexTheme') {
-      document
-        .getElementById('header-logo')
-        .setAttribute('src', 'assets/img/Deutsches_Krebsforschungszentrum_Logo.svg')
+      document.getElementById('header-logo').setAttribute('src', 'assets/img/DKTK_Logo_copied.png')
       document.getElementById('header-logo').setAttribute('alt', 'DKTK Logo')
       document
         .getElementById('footer-logo')

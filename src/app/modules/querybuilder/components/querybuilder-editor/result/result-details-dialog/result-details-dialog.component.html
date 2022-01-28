@@ -14,9 +14,9 @@
         </tr>
       </thead>
       <tr class="empty-row"></tr>
-      <tr *ngFor="let location of result.resultLines" class="result-lines">
-        <td class="left-column">{{ location.siteName }}</td>
-        <td class="right-column">{{ backend.obfuscateResult(location.numberOfPatients) }}</td>
+      <tr *ngFor="let location of result.replySites" class="result-lines">
+        <td class="left-column">{{ location.site }}</td>
+        <td class="right-column">{{ backend.obfuscateResult(location.donor.count) }}</td>
       </tr>
     </table>
   </div>

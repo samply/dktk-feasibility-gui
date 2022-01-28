@@ -11,7 +11,7 @@
   }
   @if ($name == 'codex') {
     num-header mat-toolbar {
-      background: mat-color($primary, 200) !important;
+      /*background: mat-color($primary, 200) !important;*/
       color: mat-contrast($primary, 200) !important;
     }
   }

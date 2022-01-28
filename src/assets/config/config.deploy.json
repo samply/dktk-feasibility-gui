@@ -33,7 +33,7 @@
     }
   },
   "options": {
-    "pollingtimeinseconds": 10,
+    "pollingtimeinseconds": 20,
     "pollingintervallinseconds": 1,
     "lowerboundarypatientresult": 10
   },

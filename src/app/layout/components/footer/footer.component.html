@@ -1,7 +1,7 @@
 <mat-toolbar class="num-footer" role="contentinfo">
   <mat-toolbar-row>
     <div>
-      <img src="assets/img/bmbf-gef-mit.png" alt="BMBF-LOGO" class="bmbf-logo" />
+      <!--<img src="assets/img/bmbf-gef-mit.png" alt="BMBF-LOGO" class="bmbf-logo" />-->
       <img id="footer-logo" src="{{ urlSrc }}" alt="{{ urlAlt }}" class="{{ stylesheet }}" />
       <!--<img src="assets/img/NUM_Logo.png" alt="NUM-LOGO" class="num-logo" />-->
     </div>
@@ -9,11 +9,9 @@
     <span fxFlex></span>
     <div>
       <mat-toolbar-row>
-        <a mat-button href="https://www.netzwerk-universitaetsmedizin.de/impressum">{{
-          'LEGAL.DISCLOSURE' | translate
-        }}</a>
+        <a mat-button href="https://dktk.dkfz.de/impressum">{{ 'LEGAL.DISCLOSURE' | translate }}</a>
         <mat-divider [vertical]="true"></mat-divider>
-        <a mat-button href="https://www.netzwerk-universitaetsmedizin.de/datenschutz">{{
+        <a mat-button href="https://dktk.dkfz.de/datenschutz">{{
           'LEGAL.DATAPROTECTION' | translate
         }}</a>
       </mat-toolbar-row>
