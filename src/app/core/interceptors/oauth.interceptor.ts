@@ -16,7 +16,7 @@ export class OAuthInterceptor implements HttpInterceptor {
     'assets',
     '/assets',
     'http://localhost:8097/share_broker_rest_war',
-    'http://localhost:8092/searchbroker',
+    'http://localhost:8092/broker',
   ]
   excludedUrlsRegEx = this.excludedUrls.map((url) => new RegExp('^' + url, 'i'))
 

@@ -29,7 +29,7 @@ export class BackendService {
   public static MOCK_RESULT_URL = 'http://localhost:9999/result-of-query/12345'
 
   private readonly mockBackendDataProvider = new MockBackendDataProvider(this.feature)
-  lowerBoundary: number = this.feature.getPatientResultLowerBoundary()
+  lowerBoundaryPatient: number = this.feature.getPatientResultLowerBoundary()
 
   public getCategories(): Observable<Array<CategoryEntry>> {
     if (this.feature.mockTerminology()) {
@@ -90,7 +90,7 @@ export class BackendService {
       return this.http.post<any>(
         this.createUrl('searchbroker', BackendService.PATH_RUN_QUERY),
         JSON.stringify(test),
-        { headers }
+        { headers, observe: 'response' }
       )
     }
   }
@@ -111,8 +111,7 @@ export class BackendService {
       return of(SearchbrokerResult)
     }
     const headers = new HttpHeaders().set('Authorization', 'Basic ' + btoa('test123:test123'))
-
-    return this.http.get<QueryResultSB>(this.createUrl('searchbroker', '') + resultUrl, { headers })
+    return this.http.get<QueryResultSB>(resultUrl, { headers })
   }
 
   createUrl(broker: string, pathToResource: string, paramString?: string): string {
@@ -139,8 +138,8 @@ export class BackendService {
     if (result === 0) {
       return '0'
     } else {
-      if (result <= this.lowerBoundary) {
-        return '< ' + this.lowerBoundary.toString()
+      if (result <= this.lowerBoundaryPatient) {
+        return '< ' + this.lowerBoundaryPatient.toString()
       } else {
         return result.toString()
       }

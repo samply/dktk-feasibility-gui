@@ -14,10 +14,12 @@
         </tr>
       </thead>
       <tr class="empty-row"></tr>
-      <tr *ngFor="let location of result.replySites" class="result-lines">
-        <td class="left-column">{{ location.site }}</td>
-        <td class="right-column">{{ backend.obfuscateResult(location.donor.count) }}</td>
-      </tr>
+      <ng-container *ngIf="result.replySites.length >= lowerBoundaryLocation">
+        <tr *ngFor="let location of result.replySites; index as i" class="result-lines">
+          <td class="left-column">{{ location.site }}</td>
+          <td class="right-column">{{ backend.obfuscateResult(location.donor.count) }}</td>
+        </tr>
+      </ng-container>
     </table>
   </div>
 </div>
