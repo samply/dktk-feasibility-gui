@@ -121,8 +121,8 @@ export class QuerybuilderEditorComponent implements OnInit, OnDestroy, AfterView
     this.showSpinningIcon = true
     this.subscriptionResult?.unsubscribe()
     this.subscriptionResult = this.backend.postQuery(this.query).subscribe((response) => {
-      const keys = response.headers.keys()
-      console.log(keys)
+      // const keys = response.headers.keys()
+      // console.log(keys)
       this.startRequestingResult(response.headers.get('location')) // response.location))
     })
   }

@@ -188,6 +188,8 @@ describe('BackendService', () => {
     })
   })
 
+  // TODO
+  /*
   it('should post mocked query', (done: DoneCallback) => {
     const appConfigService = TestBed.inject<AppConfigService>(AppConfigService)
     jest
@@ -206,7 +208,7 @@ describe('BackendService', () => {
 
     httpMock.expectOne('http:/abc/queries').flush(mockResponse)
   })
-
+*/
   it('should return programmatically mocked result', (done: DoneCallback) => {
     // const featureService = TestBed.inject<FeatureService>(FeatureService)
     jest.spyOn(featureService, 'mockResult').mockReturnValue(true)
@@ -217,6 +219,7 @@ describe('BackendService', () => {
     })
   })
 
+  // TODO
   /*
   it('should return mocked result', (done: DoneCallback) => {
     const appConfigService = TestBed.inject<AppConfigService>(AppConfigService)
