@@ -181,7 +181,6 @@ export class ApiTranslator {
               criterionV2.attributeFilters.push(attribute)
             }
             attribute.attributeCode = attribute.attributeDefinition.attributeCode
-            attribute.attributeDefinition = undefined
           })
         }
         this.editTimeRestrictions(criterionV2.timeRestriction)
@@ -206,6 +205,15 @@ export class ApiTranslator {
         criterion.valueFilter.comparator = undefined
         criterion.valueFilter.value = undefined
       }
+    }
+    if (criterion.attributeFilters?.length > 0) {
+      criterion.attributeFilters.forEach((attribute) => {
+        attribute.attributeDefinition = undefined
+        attribute.precision = undefined
+        if (attribute.type === OperatorOptions.QUANTITY_RANGE) {
+          attribute.value = undefined
+        }
+      })
     }
   }
 }
