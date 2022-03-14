@@ -10,14 +10,14 @@
       <thead>
         <tr>
           <td class="left-column">{{ 'RESULT.TOTAL' | translate }}</td>
-          <td class="right-column">{{ backend.obfuscateResult(result.totalNumberOfPatients) }}</td>
+          <td class="right-column">{{ backend.obfuscateResult(result?.totalNumberOfPatients) }}</td>
         </tr>
       </thead>
       <tr class="empty-row"></tr>
       <ng-container *ngIf="result.replySites.length >= lowerBoundaryLocation">
         <tr *ngFor="let location of result.replySites; index as i" class="result-lines">
           <td class="left-column">{{ location.site }}</td>
-          <td class="right-column">{{ backend.obfuscateResult(location.donor.count) }}</td>
+          <td class="right-column">{{ backend.obfuscateResult(location?.donor.count) }}</td>
         </tr>
       </ng-container>
     </table>
