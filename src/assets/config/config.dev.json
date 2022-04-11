@@ -14,7 +14,11 @@
   "auth": {
     "baseUrl": "http://localhost:8080",
     "realm": "codex-develop",
-    "clientId": "feasibility-gui"
+    "clientId": "feasibility-gui",
+    "excludedUrls": [ "http://localhost:8097/share_broker_rest_war",
+                      "http://localhost:8092/broker",
+                      "http://e260-serv-11:8080",
+                      "http://e260-serv-11:8080/broker"]
   },
   "legal": {
     "version": "0.9.0",

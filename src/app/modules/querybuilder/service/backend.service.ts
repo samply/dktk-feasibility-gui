@@ -135,13 +135,18 @@ export class BackendService {
   }
 
   obfuscateResult(result: number): string {
-    if (result === 0) {
-      return '0'
+    if (this.lowerBoundaryPatient === undefined) {
+      return 'obfuscated'
     } else {
-      if (result <= this.lowerBoundaryPatient) {
-        return '< ' + this.lowerBoundaryPatient.toString()
+      if (result === 0) {
+        return '0'
       } else {
-        return result.toString()
+        if (result <= this.lowerBoundaryPatient) {
+          return '< ' + this.lowerBoundaryPatient.toString()
+        } else {
+          console.log(result)
+          return result.toString()
+        }
       }
     }
   }

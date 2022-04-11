@@ -3,6 +3,7 @@ import { inject, TestBed } from '@angular/core/testing'
 import { OAuthStorage, OAuthService } from 'angular-oauth2-oidc'
 import { OAuthInterceptor } from './oauth.interceptor'
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing'
+import { AppConfigService } from '../../config/app-config.service'
 
 describe('OAuthInterceptor', () => {
   let authInterceptor: OAuthInterceptor
@@ -14,6 +15,17 @@ describe('OAuthInterceptor', () => {
   const authService = {
     logOut: () => {},
   } as OAuthService
+
+  const appConfig = {
+    config: {
+      auth: {
+        baseUrl: 'localhost',
+        clientId: 'test-app',
+        realm: 'test-realm',
+        excludedUrls: [],
+      },
+    },
+  } as AppConfigService
 
   beforeEach(() => {
     TestBed.configureTestingModule({
@@ -29,7 +41,7 @@ describe('OAuthInterceptor', () => {
       ],
     })
 
-    authInterceptor = new OAuthInterceptor(authService, authStorage)
+    authInterceptor = new OAuthInterceptor(authService, authStorage, appConfig)
   })
 
   afterEach(() => {

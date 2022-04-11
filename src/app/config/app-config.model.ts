@@ -15,6 +15,7 @@ export interface IAppConfig {
     baseUrl: string
     realm: string
     clientId: string
+    excludedUrls: string[]
   }
   legal: {
     version: string

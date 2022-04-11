@@ -9,23 +9,29 @@ import {
 } from '@angular/common/http'
 import { Observable, throwError } from 'rxjs'
 import { catchError } from 'rxjs/operators'
+import { AppConfigService } from '../../config/app-config.service'
 
 @Injectable()
 export class OAuthInterceptor implements HttpInterceptor {
-  excludedUrls = [
-    'assets',
-    '/assets',
-    'http://localhost:8097/share_broker_rest_war',
-    'http://localhost:8092/broker',
-    'http://e260-serv-11:8080',
-    'http://e260-serv-11:8080/broker',
-  ]
-  excludedUrlsRegEx = this.excludedUrls.map((url) => new RegExp('^' + url, 'i'))
+  excludedUrls = ['assets', '/assets']
 
-  constructor(private oauthService: OAuthService, private authStorage: OAuthStorage) {}
+  constructor(
+    private oauthService: OAuthService,
+    private authStorage: OAuthStorage,
+    private appConfig: AppConfigService
+  ) {}
 
   private isExcluded(req: HttpRequest<any>): boolean {
-    return this.excludedUrlsRegEx.some((toBeExcluded) => toBeExcluded.test(req.url))
+    if (this.appConfig.getConfig()?.auth?.excludedUrls !== undefined) {
+      this.appConfig.getConfig().auth.excludedUrls.forEach((url) => {
+        if (this.excludedUrls.indexOf(url) === -1) {
+          this.excludedUrls.push(url)
+        }
+      })
+    }
+
+    const excludedUrlsRegEx = this.excludedUrls.map((url) => new RegExp('^' + url, 'i'))
+    return excludedUrlsRegEx.some((toBeExcluded) => toBeExcluded.test(req.url))
   }
   public intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
     if (this.isExcluded(req)) {
