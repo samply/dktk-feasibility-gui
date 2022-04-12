@@ -144,8 +144,11 @@ export class BackendService {
         if (result <= this.lowerBoundaryPatient) {
           return '< ' + this.lowerBoundaryPatient.toString()
         } else {
-          console.log(result)
-          return result.toString()
+          if (result !== undefined) {
+            return result.toString()
+          } else {
+            return 'undefined'
+          }
         }
       }
     }

@@ -31,7 +31,9 @@ export class ResultDetailsDialogComponent implements OnInit {
 
   lowerBoundaryLocation: number = this.feature.getLocationResultLowerBoundary()
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log(this.result)
+  }
 
   doClose(): void {
     this.resultSubscription?.unsubscribe()
