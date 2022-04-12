@@ -24,16 +24,23 @@ export class ResultDetailsDialogComponent implements OnInit {
     public backend: BackendService,
     private feature: FeatureService
   ) {
-    this.resultSubscription = this.data.resultObservable$.subscribe((resultTemp) =>
-      this.sortResult(resultTemp)
-    )
+    this.resultSubscription = this.data.resultObservable$.subscribe((resultTemp) => {
+      console.log(resultTemp)
+      this.result = resultTemp
+      let sum = 0
+      this.result.replySites.forEach((site) => {
+        // @ts-ignore
+        sum += site.donor.count
+      })
+      this.result.totalNumberOfPatients = sum
+
+      // this.sortResult(resultTemp)
+    })
   }
 
   lowerBoundaryLocation: number = this.feature.getLocationResultLowerBoundary()
 
-  ngOnInit(): void {
-    console.log(this.result)
-  }
+  ngOnInit(): void {}
 
   doClose(): void {
     this.resultSubscription?.unsubscribe()
