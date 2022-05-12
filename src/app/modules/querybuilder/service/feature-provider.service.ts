@@ -49,12 +49,12 @@ export class FeatureProviderService {
     this.renderer.removeClass(document.getElementById('footer-logo'), oldTheme)
     this.renderer.addClass(document.getElementById('footer-logo'), newTheme)
     if (newTheme === 'codexTheme') {
-      document.getElementById('header-logo').setAttribute('src', 'assets/img/DKTK_Logo_copied.png')
+      document.getElementById('header-logo').setAttribute('src', 'assets/img/dktk.svg')
       document.getElementById('header-logo').setAttribute('alt', 'DKTK Logo')
       document
         .getElementById('footer-logo')
         .setAttribute('src', 'assets/img/Deutsches_Krebsforschungszentrum_Logo.svg')
-      document.getElementById('footer-logo').setAttribute('alt', 'DKTK Logo')
+      document.getElementById('footer-logo').setAttribute('alt', 'DKFZ Logo')
     }
     if (newTheme === 'abideTheme') {
       document.getElementById('header-logo').setAttribute('src', 'assets/img/Abide_MI_cropped.jpg')

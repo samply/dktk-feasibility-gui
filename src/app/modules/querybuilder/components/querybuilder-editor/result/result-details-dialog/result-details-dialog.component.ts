@@ -25,7 +25,6 @@ export class ResultDetailsDialogComponent implements OnInit {
     private feature: FeatureService
   ) {
     this.resultSubscription = this.data.resultObservable$.subscribe((resultTemp) => {
-      console.log(resultTemp)
       this.result = resultTemp
       let sum = 0
       this.result.replySites.forEach((site) => {

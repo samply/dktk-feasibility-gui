@@ -162,7 +162,9 @@
   },
   "LEGAL": {
     "DISCLOSURE": "Impressum",
-    "DATAPROTECTION": "Datenschutz"
+    "DATAPROTECTION": "Datenschutz",
+    "CCP": "Über die CCP",
+    "COPYRIGHT_OWNER": "Basiert auf Arbeiten aus DKTK, German Biobank Alliance, Netzwerk Universitätsmedizin und Medizininformatik-Initiative"
   },
   "BUTTON": {
     "SAVE": "Speichern",

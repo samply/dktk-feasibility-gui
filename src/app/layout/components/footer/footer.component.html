@@ -14,12 +14,14 @@
         <a mat-button href="https://dktk.dkfz.de/datenschutz">{{
           'LEGAL.DATAPROTECTION' | translate
         }}</a>
+        <mat-divider [vertical]="true"></mat-divider>
+        <a mat-button href="https://www.dktk.org/ccp">{{ 'LEGAL.CCP' | translate }}</a>
       </mat-toolbar-row>
       <div class="version">Version {{ config.legal.version }}</div>
     </div>
     <span fxFlex></span>
     <div>
-      <div class="copyright">© 2022 {{ config.legal.copyrightOwner }}</div>
+      <div class="copyright">{{ 'LEGAL.COPYRIGHT_OWNER' | translate }}</div>
       <num-language></num-language>
     </div>
   </mat-toolbar-row>

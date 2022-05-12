@@ -39,13 +39,13 @@
   "options": {
     "pollingtimeinseconds": 20,
     "pollingintervallinseconds": 1,
-    "lowerboundarypatientresult": 10,
-    "lowerboundarylocationresult": 3
+    "lowerboundarypatientresult": 0,
+    "lowerboundarylocationresult": 1
   },
   "mock": {
-    "terminology": false,
-    "query": false,
-    "result": false
+    "terminology": true,
+    "query": true,
+    "result": true
   },
   "stylesheet": "codexTheme",
   "fhirport": "8082",
